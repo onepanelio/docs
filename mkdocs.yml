@@ -1,0 +1,9 @@
+site_name: Onepanel Documentation
+site_url: https://help.onepanel.io
+site_author: Onepanel, Inc.
+theme:
+  name: 'material'
+pages:
+  - Home: index.md
+  - CLI:
+    - 'Getting started with CLI': cli.md
