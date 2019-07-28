@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://help.onepanel.io/</loc>
-     <lastmod>2019-07-26</lastmod>
+     <loc>https://docs.onepanel.io/</loc>
+     <lastmod>2019-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://help.onepanel.io/cli/</loc>
-     <lastmod>2019-07-26</lastmod>
+     <loc>https://docs.onepanel.io/cli/</loc>
+     <lastmod>2019-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.onepanel.io/sdk/</loc>
+     <lastmod>2019-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
