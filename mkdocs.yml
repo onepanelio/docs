@@ -1,9 +1,12 @@
 site_name: Onepanel Documentation
-site_url: https://help.onepanel.io
+site_url: https://docs.onepanel.io
 site_author: Onepanel, Inc.
+repo_url: https://github.com/onepanelio/docs
 theme:
   name: 'material'
 pages:
   - Home: index.md
   - CLI:
-    - 'Getting started with CLI': cli.md
+    - 'Getting started with CLI': cli/index.md
+  - SDK:
+    - 'Getting start with SDK': sdk/index.md
