@@ -12,11 +12,24 @@ extra_javascript:
 nav:
   - About Onepanel: index.md
   - Get Started:
-    - Core Concepts: core-concepts.md
+    - Core Concepts: start/core-concepts.md
+    - Onepanel CLI: start/cli.md
+    - Onepanel SDK: start/sdk.md
+  - Workspaces:
+    - Overview: workspaces/index.md
+    - Create a Workspace: workspaces/create.md
+    - Pause and Resume: workspaces/pause.md
+    - Switch Machine Types: workspaces/machine-types.md
+  - Jobs:
+    - Overview: jobs/index.md
+  - Datasets:
+    - Overview: datasets/index.md
+    - Create: datasets/create.md
   - CLI:
-    - 'Getting started with CLI': cli/index.md
+    - Overview: cli/index.md
+    - Job Commands: cli/job-commands.md
   - SDK:
-    - 'Getting started with SDK': sdk/index.md
+    - Overview: sdk/index.md
   - Environments:
     - List of Environments: environments/index.md
   - Machine Types:
