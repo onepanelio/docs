@@ -6,6 +6,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://docs.onepanel.io/cli/</loc>
      <lastmod>2019-07-28</lastmod>
      <changefreq>daily</changefreq>
@@ -13,6 +18,21 @@
     <url>
      <loc>https://docs.onepanel.io/sdk/</loc>
      <lastmod>2019-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
 </urlset>
