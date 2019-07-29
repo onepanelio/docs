@@ -6,6 +6,14 @@ body {
     background-color: #01579B;
 }
 
+.md-nav__link--active, .md-nav__link:active {
+    color: #01579B;
+}
+
+.md-typeset a {
+    color: #01579B;
+}
+
 @media screen and (min-width: 76.1875em) {
     .md-sidebar--primary {
         padding: 1.0rem 0 0 .6rem;
@@ -38,5 +46,13 @@ body {
     .md-logo > img {
         width: 28px;
         height: 28px;
+    }
+}
+
+@media only screen and (max-width: 76.1875em) {
+    html .md-nav--primary .md-nav__title--site {
+        position: relative;
+        background-color: #01579B;
+        color: #fff;
     }
 }
