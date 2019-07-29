@@ -14,6 +14,10 @@ body {
     color: #01579B;
 }
 
+.md-typeset h2[id] .headerlink {
+    font-size: 26px;
+}
+
 @media screen and (min-width: 76.1875em) {
     .md-sidebar--primary {
         padding: 1.0rem 0 0 .6rem;
