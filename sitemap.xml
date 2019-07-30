@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://docs.onepanel.io/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -12,12 +12,12 @@
     </url>
     <url>
      <loc>https://docs.onepanel.io/start/cli/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://docs.onepanel.io/start/sdk/</loc>
+     <lastmod>2019-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -57,7 +57,7 @@
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -67,7 +67,7 @@
     </url>
     <url>
      <loc>https://docs.onepanel.io/sdk/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -77,7 +77,7 @@
     </url>
     <url>
      <loc>https://docs.onepanel.io/machine-types/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
