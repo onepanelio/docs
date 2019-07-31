@@ -8,12 +8,12 @@ pip install -U onepanel
 ```
 
 !!! note "Note" 
-    CLI is pre-installed if you are using Onepanel's Workspaces.
+    CLI is pre-installed if you are using Onepanel Workspaces or Jobs.
 
 !!! tip "Tip" 
     The CLI is compatible with Python 2.7.x and Python >= 3.6.x, if you have both versions installed, you will need to use pip3 for Python >= 3.6.x.
 
-## Connect your account
+## Authentication
 
 You can connect your Onepanel account to CLI by using the `login` command where you'll be prompted for your email and password:
 
@@ -21,12 +21,9 @@ You can connect your Onepanel account to CLI by using the `login` command where 
 onepanel login
 ```
 
-Alternatively, you can create an "access token" as shown below:
+Alternatively, you can create an access token as shown below:
 
-<video width="100%" controls>
-  <source src="/assets/vid/access-token.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+![Screenshot](/assets/img/access-token.gif)
 
 And then login as follows:
 
@@ -34,7 +31,7 @@ And then login as follows:
 onepanel login -t <access-token>
 ```
 
-## Checking version
+## Check version
 
 ```bash
 onepanel --version
