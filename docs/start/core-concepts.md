@@ -2,7 +2,7 @@
 A Onepanel [Project](/projects) is a collection of your code repostitories, workspaces and jobs that you can share and collaborate on with your teammates. Your projects can also be forked by team members or made public so that others in the Onepanel community can view and fork them.
 
 ## Workspaces
-![](core-concepts-181630.png)
+![](../assets/img/core-concepts-182623.png)
 
 [Workspaces](/workspaces) are full Linux computing environments that come pre-installed with all the tools you need to explore data and build and experiment with your models. They include Python, JupyterLab, TensorFlow, PyTorch and other well known deep learning libraries and tools, as well as full terminal access. You can optionally [install custom packages and dependencies](environments/custom-packages) into your workspaces.
 

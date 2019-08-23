@@ -1,4 +1,4 @@
 {
-    "pasteImage.basePath": "${currentFileDir}",
+    "pasteImage.path": "${projectRoot}/docs/assets/img",
     "pasteImage.defaultName": "${currentFileNameWithoutExt}-HHmmss"
 }
