@@ -1,6 +1,7 @@
 site_name: Onepanel Documentation
 site_url: https://docs.onepanel.io
 site_author: Onepanel, Inc.
+site_description: Extensible machine learning and deep learning platform on GPUs
 repo_url: https://github.com/onepanelio/docs
 theme:
   name: 'material'
