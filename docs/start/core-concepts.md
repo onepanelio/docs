@@ -16,9 +16,9 @@ While a job is running, you can view running logs, system metrics and training m
 Once a job completes, a snapshot of logs, code, commands, datasets, environments and output is automatically saved. This allows you to share your results with others and reproduce/re-run the same experiments at a later time.
 
 ## Datasets
-With Onepanel [Datasets](/datasets), you can version and share your data. This is usually your training, test and validation data which you can then [mount into a job or workspace](/datasets/mount).
+With Onepanel [Datasets](/datasets), you can search or create version controlled datasets which you can then [mount into a job or workspace](/datasets/mount). It is ideal to separate your data from your code from your data so you can collaborate with others and try different code on the same underlying dataset.
 
 ## Environments
-
+Onepanel [Environments](/environments) are CPU/GPU optimized and are pre-configured with all tools you need to build deep learning models, annotate your images and much more. They can be further customized with [additional packages and dependencies](environments/custom-packages).
 
 
