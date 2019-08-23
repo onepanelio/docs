@@ -20,5 +20,3 @@ With Onepanel [Datasets](/datasets), you can search or create version controlled
 
 ## Environments
 Onepanel [Environments](/environments) are CPU/GPU optimized and are pre-configured with all tools you need to build deep learning models, annotate your images and much more. They can be further customized with [additional packages and dependencies](environments/custom-packages).
-
-
