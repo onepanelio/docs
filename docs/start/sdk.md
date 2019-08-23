@@ -6,11 +6,7 @@ Onepanel SDK is available as soon as you install [Onepanel CLI](/start/cli)
 
 ## Authentication
 
-The recommended way to authenticate in Onepanel's SDK is to use an access token, you can create an access token as shown below:
-
-![Screenshot](/assets/img/access-token.gif)
-
-Then you can authenticate in the SDK as follows:
+The recommended way to authenticate in Onepanel's SDK is to use an access token, you can create an [access token](/integrations/access-tokens/#create-access-token) and authenticate in the SDK as follows:
 
 ```python
 from onepanel.sdk import Client

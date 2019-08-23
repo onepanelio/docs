@@ -5,6 +5,7 @@ repo_url: https://github.com/onepanelio/docs
 theme:
   name: 'material'
   logo: assets/img/onepanel-logo-white.svg
+  favicon: assets/img/favicon.png
 extra_css:
   - assets/css/extra.css
 extra_javascript:
@@ -15,25 +16,37 @@ nav:
     - Core Concepts: start/core-concepts.md
     - Onepanel CLI: start/cli.md
     - Onepanel SDK: start/sdk.md
+  - Projects:
+    - Overview: projects/index.md
+    - Create a New Project: projects/create.md
+    - Delete a Project: projects/delete.md
+    - Manage Repositories: projects/repositories.md
   - Workspaces:
     - Overview: workspaces/index.md
     - Create a Workspace: workspaces/create.md
-    - Pause and Resume: workspaces/pause.md
+    - Pause and Resume: workspaces/pause-resume.md
     - Switch Machine Types: workspaces/machine-types.md
   - Jobs:
     - Overview: jobs/index.md
   - Datasets:
     - Overview: datasets/index.md
     - Create: datasets/create.md
+    - Mount a Dataset: datasets/mount.md
   - CLI:
     - Overview: cli/index.md
     - Job Commands: cli/job-commands.md
   - SDK:
     - Overview: sdk/index.md
+  - Integrations:
+    - Access Tokens: integrations/access-tokens.md
+    - Environment Variables: integrations/environment-variables.md
+    - Git Credentials: integrations/git-credentials.md
   - Environments:
     - List of Environments: environments/index.md
+    - Custom Packages: environments/custom-packages.md
   - Machine Types:
     - List of Machine Types: machine-types/index.md
+    - Spot Instances: machine-types/spot.md
   - Volume Types:
     - List of Volume Types: volume-types/index.md
 markdown_extensions:

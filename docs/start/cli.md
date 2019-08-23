@@ -21,11 +21,7 @@ You can connect your Onepanel account to CLI by using the `login` command where 
 onepanel login
 ```
 
-Alternatively, you can create an access token as shown below:
-
-![Screenshot](/assets/img/access-token.gif)
-
-And then login as follows:
+Alternatively, you can create an [access token](/integrations/access-tokens/#create-access-token) and then login as follows:
 
 ```bash
 onepanel login -t <access-token>
