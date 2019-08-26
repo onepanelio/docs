@@ -35,7 +35,8 @@ nav:
     - Mount a Dataset: datasets/mount.md
   - CLI:
     - Overview: cli/index.md
-    - Job Commands: cli/job-commands.md
+    - onepanel login: cli/login.md
+    - onepanel jobs: cli/jobs.md
   - SDK:
     - Overview: sdk/index.md
   - Integrations:

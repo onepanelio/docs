@@ -35,6 +35,9 @@ onepanel --version
 
 ## Help and documentation
 
+!!! info "Info"
+    See [CLI documentation](/cli/) for additional commands
+
 You can add `--help`  to any command to view information about its syntax and options, some examples:
 
 ```bash
