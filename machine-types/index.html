@@ -10,6 +10,8 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
+        <meta name="description" content="Extensible machine learning and deep learning platform on GPUs">
+      
       
         <link rel="canonical" href="https://docs.onepanel.io/machine-types/">
       
@@ -559,8 +561,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../cli/job-commands.md" title="Job Commands" class="md-nav__link">
-      Job Commands
+    <a href="../cli/login/" title="onepanel login" class="md-nav__link">
+      onepanel login
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/jobs.md" title="onepanel jobs" class="md-nav__link">
+      onepanel jobs
     </a>
   </li>
 
@@ -796,7 +810,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../volume-types/index.md" title="List of Volume Types" class="md-nav__link">
+    <a href="../volume-types/" title="List of Volume Types" class="md-nav__link">
       List of Volume Types
     </a>
   </li>
@@ -824,25 +838,100 @@
                 
                   <h1>List of Machine Types</h1>
                 
-                <table>
+                <div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>See <a href="https://www.onepanel.io/pricing#compute-storage-pricing" target="_blank">per second pricing</a> for more information</p>
+</div>
+<table>
 <thead>
 <tr>
-<th>Machine</th>
-<th>CPU</th>
-<th>Memory</th>
-<th>GPU</th>
+<th>Name</th>
+<th>Specifications</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>cpu-2-8</td>
-<td>2</td>
-<td>8GB</td>
-<td></td>
+<td>CPU: 2, RAM: 8GB</td>
+</tr>
+<tr>
+<td>cpu-8-32</td>
+<td>CPU: 8, RAM: 32GB</td>
+</tr>
+<tr>
+<td>gpu-4-26-1k80</td>
+<td>GPU: 1 (Tesla K80), CPU: 4, RAM: 26GB</td>
+</tr>
+<tr>
+<td>gpu-8-52-1k80</td>
+<td>GPU: 1 (Tesla K80), CPU: 8, RAM: 52GB</td>
+</tr>
+<tr>
+<td>gpu-4-26-1t4</td>
+<td>GPU: 1 (Tesla T4), CPU: 4, RAM: 26GB</td>
+</tr>
+<tr>
+<td>gpu-8-52-1t4</td>
+<td>GPU: 1 (Tesla T4), CPU: 8, RAM: 52GB</td>
+</tr>
+<tr>
+<td>gpu-8-52-1v100</td>
+<td>GPU: 1 (Tesla V100), CPU: 8, RAM: 52GB</td>
+</tr>
+<tr>
+<td>gpu-16-104-2v100</td>
+<td>GPU: 2 (Tesla V100), CPU: 16, RAM: 104GB</td>
+</tr>
+<tr>
+<td>gpu-32-208-4v100</td>
+<td>GPU: 4 (Tesla V100), CPU: 32 RAM: 208GB</td>
+</tr>
+<tr>
+<td>gpu-64-416-8v100</td>
+<td>GPU: 8 (Tesla V100), CPU: 64 RAM: 416GB</td>
+</tr>
+<tr>
+<td>cpu-2-8-spot</td>
+<td>CPU: 2, RAM: 8GB (spot)</td>
+</tr>
+<tr>
+<td>cpu-8-32-spot</td>
+<td>CPU: 8, RAM: 32GB (spot)</td>
+</tr>
+<tr>
+<td>gpu-4-26-1k80-spot</td>
+<td>GPU: 1 (Tesla K80), CPU: 4, RAM: 26GB (spot)</td>
+</tr>
+<tr>
+<td>gpu-8-52-1k80-spot</td>
+<td>GPU: 1 (Tesla K80), CPU: 8, RAM: 52GB (spot)</td>
+</tr>
+<tr>
+<td>gpu-4-26-1t4-spot</td>
+<td>GPU: 1 (Tesla T4), CPU: 4, RAM: 26GB (spot)</td>
+</tr>
+<tr>
+<td>gpu-8-52-1t4-spot</td>
+<td>GPU: 1 (Tesla T4), CPU: 8, RAM: 52GB (spot)</td>
+</tr>
+<tr>
+<td>gpu-8-52-1v100-spot</td>
+<td>GPU: 1 (Tesla V100), CPU: 8, RAM: 52GB (spot)</td>
+</tr>
+<tr>
+<td>gpu-16-104-2v100-spot</td>
+<td>GPU: 2 (Tesla V100), CPU: 16, RAM: 104GB (spot)</td>
+</tr>
+<tr>
+<td>gpu-32-208-4v100-spot</td>
+<td>GPU: 4 (Tesla V100), CPU: 32 RAM: 208GB (spot)</td>
+</tr>
+<tr>
+<td>gpu-64-416-8v100-spot</td>
+<td>GPU: 8 (Tesla V100), CPU: 64 RAM: 416GB (spot)</td>
 </tr>
 </tbody>
 </table>
-<p>See <a href="https://www.onepanel.io/pricing">pricing</a></p>
                 
                   
                 
@@ -877,6 +966,20 @@
             </div>
           </a>
         
+        
+          <a href="../volume-types/" title="List of Volume Types" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                List of Volume Types
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
