@@ -22,6 +22,10 @@ body {
     font-size: 26px;
 }
 
+.md-typeset__table {
+    min-width: 100%;
+ }
+
 @media screen and (min-width: 76.1875em) {
     .md-sidebar--primary {
         padding: 1.0rem 0 0 .6rem;

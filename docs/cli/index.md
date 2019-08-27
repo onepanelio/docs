@@ -5,14 +5,14 @@ You can use Onepanel CLI to run commands from any terminal or integrate Onepanel
 
 ## Commands
 
-Command                         | Description                      |
---------------------------------|----------------------------------|
-[login](login/)                 | Login to Onepanel                |
-[logout](logout/)               | Log out of Onepanel              |
-[projects](projects/)           | Project commands                 |
-[datasets](datasets/)           | Dataset commands                 |
-[jobs](jobs/)                   | Job commands                     |
-[download](download/)           | Download a dataset or job output |
-[environments](environments/)   | Environment commands             |
-[machine-types](machine-types/) | Machine type commands            |
-[volume-types](volume-types/)   | Volume type commands             |
+Command                                  | Description
+-----------------------------------------|----------------------------------
+[onepanel login](login/)                 | Login to Onepanel
+[onepanel logout](logout/)               | Log out of Onepanel
+[onepanel projects](projects/)           | Project commands
+[onepanel datasets](datasets/)           | Dataset commands
+[onepanel jobs](jobs/)                   | Job commands
+[onepanel download](download/)           | Download a dataset or job output
+[onepanel environments](environments/)   | Environment commands
+[onepanel machine-types](machine-types/) | Machine type commands
+[onepanel volume-types](volume-types/)   | Volume type commands
