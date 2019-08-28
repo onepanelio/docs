@@ -2,7 +2,7 @@
     Deleted projects cannot be restored.
 
 !!! note "Note"
-    If you have running Workspaces or Jobs, you have to stop them first before deleting project.
+    If you have running Workspaces or Jobs, you have to stop them first before deleting a project.
 
 To delete a Project:
 

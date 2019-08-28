@@ -1,5 +1,5 @@
 ## Projects
-A Onepanel [Project](/projects) is a collection of your code repostitories, workspaces and jobs that you can share and collaborate on with your teammates. Your projects can also be forked by team members or made public so that others in the Onepanel community can view and fork them.
+A [Project](/projects/) is a collection of your code repostitories, workspaces and jobs that you can [share and collaborate](/projects/members) on with your teammates. Your projects can also be [forked](/projects/forking) by team members or made public so that others in the Onepanel community can view and fork them.
 
 ## Workspaces
 ![](../assets/img/core-concepts-182623.png)
