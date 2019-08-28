@@ -21,9 +21,9 @@ nav:
     - Overview: projects/index.md
     - Create a New Project: projects/create.md
     - Fork a Project: projects/forking.md
-    - Add Members: projects/members.md
-    - Delete a Project: projects/delete.md
+    - Manage Members: projects/members.md
     - Manage Repositories: projects/repositories.md
+    - Delete a Project: projects/delete.md
   - Workspaces:
     - Overview: workspaces/index.md
     - Create a Workspace: workspaces/create.md
