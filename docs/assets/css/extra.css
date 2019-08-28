@@ -24,7 +24,15 @@ body {
 
 .md-typeset__table {
     min-width: 100%;
- }
+}
+
+.md-typeset img, .md-typeset svg {
+    margin: 10px 0;
+}
+
+.md-typeset > ol > li, .md-typeset > ul > li {
+    margin-bottom: 1em;
+}
 
 @media screen and (min-width: 76.1875em) {
     .md-sidebar--primary {
