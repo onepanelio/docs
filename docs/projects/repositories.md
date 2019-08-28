@@ -21,3 +21,11 @@ You can add Git repositories in two ways.
 5. If this is a private repository, select **Associate with git credentials**. Select an existing or click **Add new credentials** to add and associate new credentials.
 ![](../assets/img/repositories-175904.png)
 6. Click **Save**.
+
+### Add a repository in a Workspace or Job
+1. When creating a Job or Workspace, select **New Repository**.
+![](../assets/img/repositories-101512.png)
+2. Enter the repository URL and optionally the branch name. URL format: `https://github.com/account/project.git`.
+5. If this is a private repository, select **Associate with git credentials**. Select an existing or click **Add new credentials** to add and associate new credentials.
+![](../assets/img/repositories-101852.png)
+6. Continue completing the form and click **Create**.
