@@ -7,10 +7,23 @@ theme:
   name: 'material'
   logo: assets/img/onepanel-logo-white.svg
   favicon: assets/img/favicon.png
+copyright: Copyright &copy; 2019 Onepanel, Inc.
 extra_css:
   - assets/css/extra.css
 extra_javascript:
   - assets/js/extra.js
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/onepanelio'
+    - type: 'slack'
+      link: 'https://join.slack.com/t/onepanel-users/shared_invite/enQtNTI3Mzc1OTEzMjY0LTBjMDMxM2E4NTUxZTVmMjU0OTYzYzRjZDY4Y2ViZDE5Yzc5YzkzZDI4MDg3ZThhZmEyMjlhOWM1NzVkOGY4MzI'
+    - type: 'twitter'
+      link: 'https://twitter.com/onepanelio'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/onepanelio'
+    - type: 'facebook'
+      link: 'https://facebook.com/onepanelio'
 nav:
   - About Onepanel: index.md
   - Get Started:
