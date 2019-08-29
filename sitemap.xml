@@ -56,18 +56,28 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://docs.onepanel.io/workspaces/create/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://docs.onepanel.io/workspaces/interactions/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://docs.onepanel.io/workspaces/machine-types/</loc>
+     <lastmod>2019-08-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.onepanel.io/workspaces/pause-resume/</loc>
+     <lastmod>2019-08-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.onepanel.io/workspaces/delete/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
