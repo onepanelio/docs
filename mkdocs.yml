@@ -54,13 +54,15 @@ nav:
     - Overview: cli/index.md
     - onepanel login: cli/login.md
     - onepanel logout: cli/logout.md
-    - onepanel projects: cli/projects.md
+    - onepanel projects init: cli/projects-init.md
+    - onepanel projects create: cli/projects-create.md
+    - onepanel projects list: cli/projects-list.md
     - onepanel datasets: cli/datasets.md
     - onepanel jobs: cli/jobs.md
     - onepanel download: cli/download.md
-    - onepanel environments: cli/environments.md
-    - onepanel machine-types: cli/machine-types.md
-    - onepanel volume-types: cli/volume-types.md
+    - onepanel environments list: cli/environments-list.md
+    - onepanel machine-types list: cli/machine-types-list.md
+    - onepanel volume-types list: cli/volume-types-list.md
   - SDK:
     - Overview: sdk/index.md
   - Integrations:
