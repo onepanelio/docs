@@ -27,47 +27,54 @@ extra:
 nav:
   - About Onepanel: index.md
   - Get Started:
-    - Core Concepts: start/core-concepts.md
+    - Core concepts: start/core-concepts.md
     - Onepanel CLI: start/cli.md
     - Onepanel SDK: start/sdk.md
   - Projects:
     - Overview: projects/index.md
-    - Create a New Project: projects/create.md
-    - Fork a Project: projects/forking.md
-    - Manage Members: projects/members.md
-    - Manage Repositories: projects/repositories.md
-    - Delete a Project: projects/delete.md
+    - Create a new project: projects/create.md
+    - Fork a project: projects/forking.md
+    - Manage members: projects/members.md
+    - Manage repositories: projects/repositories.md
+    - Delete a project: projects/delete.md
   - Workspaces:
     - Overview: workspaces/index.md
-    - Create a Workspace: workspaces/create.md
-    - Workspace Interactions: workspaces/interactions.md
-    - Switch Machine Types: workspaces/machine-types.md
-    - Pause and Resume: workspaces/pause-resume.md
-    - Delete a Workspace: workspaces/delete.md
+    - Create a workspace: workspaces/create.md
+    - Workspace interactions: workspaces/interactions.md
+    - Switch machine types: workspaces/machine-types.md
+    - Pause and resume: workspaces/pause-resume.md
+    - Delete a workspace: workspaces/delete.md
   - Jobs:
     - Overview: jobs/index.md
   - Datasets:
     - Overview: datasets/index.md
     - Create: datasets/create.md
-    - Mount a Dataset: datasets/mount.md
+    - Mount a dataset: datasets/mount.md
   - CLI:
     - Overview: cli/index.md
     - onepanel login: cli/login.md
+    - onepanel logout: cli/logout.md
+    - onepanel projects: cli/projects.md
+    - onepanel datasets: cli/datasets.md
     - onepanel jobs: cli/jobs.md
+    - onepanel download: cli/download.md
+    - onepanel environments: cli/environments.md
+    - onepanel machine-types: cli/machine-types.md
+    - onepanel volume-types: cli/volume-types.md
   - SDK:
     - Overview: sdk/index.md
   - Integrations:
-    - Access Tokens: integrations/access-tokens.md
-    - Environment Variables: integrations/environment-variables.md
-    - Git Credentials: integrations/git-credentials.md
+    - Access tokens: integrations/access-tokens.md
+    - Environment variables: integrations/environment-variables.md
+    - Git credentials: integrations/git-credentials.md
   - Environments:
-    - List of Environments: environments/index.md
-    - Custom Packages: environments/custom-packages.md
+    - List of environments: environments/index.md
+    - Custom packages: environments/custom-packages.md
   - Machine Types:
-    - List of Machine Types: machine-types/index.md
-    - Spot Machines: machine-types/spot.md
+    - List of machine types: machine-types/index.md
+    - Spot machines: machine-types/spot.md
   - Volume Types:
-    - List of Volume Types: volume-types/index.md
+    - List of volume types: volume-types/index.md
 markdown_extensions:
     - admonition
     - codehilite
