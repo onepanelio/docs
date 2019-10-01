@@ -64,6 +64,12 @@ Download Job output:
 onepanel download onepanel-demo/projects/examples/jobs/100
 ```
 
+Download Job output as a compressed file:
+
+```
+onepanel download onepanel-demo/projects/examples/jobs/100 --archive
+```
+
 Download Job output into a specific directory (defaults to cwd if omitted):
 
 ```
