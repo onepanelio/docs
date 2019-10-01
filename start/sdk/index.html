@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/img/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
@@ -46,7 +46,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
       
       
     
@@ -177,7 +177,7 @@
         
       
       
-      <main class="md-main" role="main">
+      <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -302,22 +302,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#installation" title="Installation" class="md-nav__link">
     Installation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#authentication" class="md-nav__link">
+  <a href="#authentication" title="Authentication" class="md-nav__link">
     Authentication
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#example-create-a-job" title="Example: create a job" class="md-nav__link">
+    Example: create a job
   </a>
   
 </li>
@@ -687,8 +687,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cli/projects/" title="onepanel projects" class="md-nav__link">
-      onepanel projects
+    <a href="../../cli/projects-init.md" title="onepanel projects init" class="md-nav__link">
+      onepanel projects init
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/projects-create.md" title="onepanel projects create" class="md-nav__link">
+      onepanel projects create
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/projects-list.md" title="onepanel projects list" class="md-nav__link">
+      onepanel projects list
     </a>
   </li>
 
@@ -735,8 +759,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cli/environments/" title="onepanel environments" class="md-nav__link">
-      onepanel environments
+    <a href="../../cli/environments-list/" title="onepanel environments list" class="md-nav__link">
+      onepanel environments list
     </a>
   </li>
 
@@ -747,8 +771,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cli/machine-types/" title="onepanel machine-types" class="md-nav__link">
-      onepanel machine-types
+    <a href="../../cli/machine-types-list/" title="onepanel machine-types list" class="md-nav__link">
+      onepanel machine-types list
     </a>
   </li>
 
@@ -759,8 +783,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cli/volume-types/" title="onepanel volume-types" class="md-nav__link">
-      onepanel volume-types
+    <a href="../../cli/volume-types-list/" title="onepanel volume-types list" class="md-nav__link">
+      onepanel volume-types list
     </a>
   </li>
 
@@ -951,7 +975,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../machine-types/spot.md" title="Spot machines" class="md-nav__link">
+    <a href="../../machine-types/spot/" title="Spot machines" class="md-nav__link">
       Spot machines
     </a>
   </li>
@@ -1017,22 +1041,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#installation" title="Installation" class="md-nav__link">
     Installation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#authentication" class="md-nav__link">
+  <a href="#authentication" title="Authentication" class="md-nav__link">
     Authentication
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#example-create-a-job" title="Example: create a job" class="md-nav__link">
+    Example: create a job
   </a>
   
 </li>
@@ -1075,7 +1099,31 @@
 <span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">email</span><span class="o">=</span><span class="s1">&#39;&lt;email&gt;&#39;</span><span class="p">,</span> <span class="n">access_token</span><span class="o">=</span><span class="s1">&#39;&lt;access token&gt;&#39;</span><span class="p">)</span>
 </pre></div>
 
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h2 id="example-create-a-job">Example: create a job<a class="headerlink" href="#example-create-a-job" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>See the <a href="https://github.com/onepanelio/sdk/blob/master/example.ipynb" target="_blank">SDK notebook</a> for a complete example</p>
+</div>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">onepanel.models</span> <span class="kn">import</span> <span class="n">Job</span>
+
+<span class="kn">from</span> <span class="nn">onepanel.sdk</span> <span class="kn">import</span> <span class="n">Client</span>
+
+<span class="c1"># login with email/access_token</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">email</span><span class="o">=</span><span class="s1">&#39;&lt;email&gt;&#39;</span><span class="p">,</span> <span class="n">access_token</span><span class="o">=</span><span class="s1">&#39;&lt;access token&gt;&#39;</span><span class="p">)</span>
+
+<span class="c1"># create a job</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">Job</span><span class="p">()</span>
+
+<span class="n">job</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&lt;job-name&gt;&#39;</span>
+<span class="n">job</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="s1">&#39;&lt;your-project-uid&gt;&#39;</span>
+<span class="n">job</span><span class="o">.</span><span class="n">command</span> <span class="o">=</span> <span class="s1">&#39;&lt;command&gt;&#39;</span>
+<span class="n">job</span><span class="o">.</span><span class="n">machine_type</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="s1">&#39;&lt;machine-type-uid&gt;&#39;</span>
+<span class="n">job</span><span class="o">.</span><span class="n">environment</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="s1">&#39;&lt;environment-uid&gt;&#39;</span>
+<span class="n">job</span><span class="o">.</span><span class="n">volume_type</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="s1">&#39;&lt;volume-type-uid&gt;&#39;</span>
+
+<span class="c1"># create a job by uploading code from current directory</span>
+<span class="n">job_uid</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">jobs</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">job</span><span class="p">)</span>
+</pre></div>
                 
                   
                 
@@ -1164,7 +1212,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       

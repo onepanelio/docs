@@ -13,7 +13,7 @@
         <meta name="description" content="Extensible machine learning and deep learning platform on GPUs">
       
       
-        <link rel="canonical" href="https://docs.onepanel.io/cli/machine-types/">
+        <link rel="canonical" href="https://docs.onepanel.io/machine-types/spot/">
       
       
         <meta name="author" content="Onepanel, Inc.">
@@ -38,15 +38,15 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/img/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
-        <title>onepanel machine-types - Onepanel Documentation</title>
+        <title>Spot machines - Onepanel Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
       
       
     
@@ -85,6 +85,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#select-spot-on-creation" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -107,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                onepanel machine-types
+                Spot machines
               
             </span>
           
@@ -173,7 +177,7 @@
         
       
       
-      <main class="md-main" role="main">
+      <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -576,12 +580,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
       CLI
@@ -599,7 +601,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Overview" class="md-nav__link">
+    <a href="../../cli/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -611,7 +613,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../login/" title="onepanel login" class="md-nav__link">
+    <a href="../../cli/login/" title="onepanel login" class="md-nav__link">
       onepanel login
     </a>
   </li>
@@ -623,7 +625,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../logout/" title="onepanel logout" class="md-nav__link">
+    <a href="../../cli/logout/" title="onepanel logout" class="md-nav__link">
       onepanel logout
     </a>
   </li>
@@ -635,8 +637,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects/" title="onepanel projects" class="md-nav__link">
-      onepanel projects
+    <a href="../../cli/projects-init.md" title="onepanel projects init" class="md-nav__link">
+      onepanel projects init
     </a>
   </li>
 
@@ -647,7 +649,31 @@
 
 
   <li class="md-nav__item">
-    <a href="../datasets/" title="onepanel datasets" class="md-nav__link">
+    <a href="../../cli/projects-create.md" title="onepanel projects create" class="md-nav__link">
+      onepanel projects create
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/projects-list.md" title="onepanel projects list" class="md-nav__link">
+      onepanel projects list
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/datasets/" title="onepanel datasets" class="md-nav__link">
       onepanel datasets
     </a>
   </li>
@@ -659,7 +685,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../jobs/" title="onepanel jobs" class="md-nav__link">
+    <a href="../../cli/jobs/" title="onepanel jobs" class="md-nav__link">
       onepanel jobs
     </a>
   </li>
@@ -671,7 +697,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../download/" title="onepanel download" class="md-nav__link">
+    <a href="../../cli/download/" title="onepanel download" class="md-nav__link">
       onepanel download
     </a>
   </li>
@@ -683,28 +709,9 @@
 
 
   <li class="md-nav__item">
-    <a href="../environments/" title="onepanel environments" class="md-nav__link">
-      onepanel environments
+    <a href="../../cli/environments-list/" title="onepanel environments list" class="md-nav__link">
+      onepanel environments list
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="onepanel machine-types" class="md-nav__link md-nav__link--active">
-      onepanel machine-types
-    </a>
-    
   </li>
 
         
@@ -714,8 +721,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../volume-types/" title="onepanel volume-types" class="md-nav__link">
-      onepanel volume-types
+    <a href="../../cli/machine-types-list/" title="onepanel machine-types list" class="md-nav__link">
+      onepanel machine-types list
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/volume-types-list/" title="onepanel volume-types list" class="md-nav__link">
+      onepanel volume-types list
     </a>
   </li>
 
@@ -873,10 +892,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
     <label class="md-nav__link" for="nav-11">
       Machine Types
@@ -894,7 +915,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../machine-types/" title="List of machine types" class="md-nav__link">
+    <a href="../" title="List of machine types" class="md-nav__link">
       List of machine types
     </a>
   </li>
@@ -904,11 +925,52 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../machine-types/spot.md" title="Spot machines" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Spot machines
+      </label>
+    
+    <a href="./" title="Spot machines" class="md-nav__link md-nav__link--active">
       Spot machines
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#select-spot-on-creation" title="Select Spot on creation" class="md-nav__link">
+    Select Spot on creation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-to-spot-in-running-workspace" title="Switch to Spot in running Workspace" class="md-nav__link">
+    Switch to Spot in running Workspace
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -960,17 +1022,75 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#select-spot-on-creation" title="Select Spot on creation" class="md-nav__link">
+    Select Spot on creation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-to-spot-in-running-workspace" title="Switch to Spot in running Workspace" class="md-nav__link">
+    Switch to Spot in running Workspace
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/onepanelio/docs/edit/master/docs/cli/machine-types.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/onepanelio/docs/edit/master/docs/machine-types/spot.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>onepanel machine-types</h1>
+                  <h1>Spot machines</h1>
                 
-                
+                <p>Spot machines are highly affordable, short lived machines. They can be terminated at any time and run for a maximum of 24 hours. If your Workspace or Job is running and a Spot machine is in use, we will automatically pause your workspace and notify you.</p>
+<h2 id="select-spot-on-creation">Select Spot on creation<a class="headerlink" href="#select-spot-on-creation" title="Permanent link">&para;</a></h2>
+<p>When creating a Workspace or Job, check the box next to <strong>Use spot machine</strong>.
+<img alt="" src="../../assets/img/spot-201620.png" /></p>
+<h2 id="switch-to-spot-in-running-workspace">Switch to Spot in running Workspace<a class="headerlink" href="#switch-to-spot-in-running-workspace" title="Permanent link">&para;</a></h2>
+<p>To switch a Workspace to a Spot machine type:</p>
+<ol>
+<li>
+<p>Click the Workspace name in the active tab.
+<img alt="" src="../../assets/img/machine-types-184117.png" /></p>
+</li>
+<li>
+<p>Click the <i class="fa fa-pencil"></i> icon next to <strong>Machine</strong>.
+<img alt="" src="../../assets/img/machine-types-184653.png" /></p>
+</li>
+<li>
+<p>Check the <strong>Use spot machine</strong> checkbox.
+<img alt="" src="../../assets/img/spot-202027.png" /></p>
+</li>
+<li>
+<p>Click <strong>Restart</strong>.</p>
+</li>
+</ol>
                 
                   
                 
@@ -991,7 +1111,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../environments/" title="onepanel environments" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="List of machine types" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1000,19 +1120,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                onepanel environments
+                List of machine types
               </span>
             </div>
           </a>
         
         
-          <a href="../volume-types/" title="onepanel volume-types" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../volume-types/" title="List of volume types" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                onepanel volume-types
+                List of volume types
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1059,7 +1179,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
