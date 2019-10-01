@@ -116,22 +116,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.onepanel.io/cli/datasets/</loc>
+     <loc>https://docs.onepanel.io/cli/datasets-init/</loc>
      <lastmod>2019-10-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
