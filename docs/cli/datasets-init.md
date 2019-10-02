@@ -1,4 +1,4 @@
-Initialize Dataset in current directory and create Dataset in Onepanel.
+Initialize Dataset in current working directory working (cwd) and in Onepanel.
 
 ## Syntax
 
@@ -13,7 +13,7 @@ onepanel datasets init [OPTIONS]
 
 ## Examples
 
-Initialize Dataset in current directory, will be prompted for name, will default to `cwd` name:
+Initialize Dataset in cwd, will be prompted for name, will default to cwd name:
 
 ```
 onepanel datasets init

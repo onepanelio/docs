@@ -55,6 +55,7 @@ nav:
     - onepanel login: cli/login.md
     - onepanel logout: cli/logout.md
     - onepanel datasets init: cli/datasets-init.md
+    - onepanel datasets create: cli/datasets-create.md
     - onepanel jobs: cli/jobs.md
     - onepanel download: cli/download.md
     - onepanel environments list: cli/environments-list.md
