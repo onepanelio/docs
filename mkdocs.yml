@@ -57,6 +57,7 @@ nav:
     - onepanel logout: cli/logout.md
     - onepanel projects init: cli/projects-init.md
     - onepanel projects create: cli/projects-create.md
+    - onepanel projects clone: cli/projects-clone.md
     - onepanel datasets init: cli/datasets-init.md
     - onepanel datasets create: cli/datasets-create.md
     - onepanel jobs: cli/jobs.md
