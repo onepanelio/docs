@@ -13,7 +13,7 @@
         <meta name="description" content="Extensible machine learning and deep learning platform on GPUs">
       
       
-        <link rel="canonical" href="https://docs.onepanel.io/cli/login/">
+        <link rel="canonical" href="https://docs.onepanel.io/cli/projects-clone/">
       
       
         <meta name="author" content="Onepanel, Inc.">
@@ -42,7 +42,7 @@
     
     
       
-        <title>onepanel login - Onepanel Documentation</title>
+        <title>onepanel projects clone - Onepanel Documentation</title>
       
     
     
@@ -111,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                onepanel login
+                onepanel projects clone
               
             </span>
           
@@ -625,6 +625,54 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../login/" title="onepanel login" class="md-nav__link">
+      onepanel login
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logout/" title="onepanel logout" class="md-nav__link">
+      onepanel logout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../projects-init/" title="onepanel projects init" class="md-nav__link">
+      onepanel projects init
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../projects-create/" title="onepanel projects create" class="md-nav__link">
+      onepanel projects create
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -634,11 +682,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        onepanel login
+        onepanel projects clone
       </label>
     
-    <a href="./" title="onepanel login" class="md-nav__link md-nav__link--active">
-      onepanel login
+    <a href="./" title="onepanel projects clone" class="md-nav__link md-nav__link--active">
+      onepanel projects clone
     </a>
     
       
@@ -684,54 +732,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../logout/" title="onepanel logout" class="md-nav__link">
-      onepanel logout
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../projects-init/" title="onepanel projects init" class="md-nav__link">
-      onepanel projects init
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../projects-create/" title="onepanel projects create" class="md-nav__link">
-      onepanel projects create
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../projects-clone/" title="onepanel projects clone" class="md-nav__link">
-      onepanel projects clone
-    </a>
   </li>
 
         
@@ -1113,34 +1113,30 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/onepanelio/docs/edit/master/docs/cli/login.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/onepanelio/docs/edit/master/docs/cli/projects-clone.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>onepanel login</h1>
+                  <h1>onepanel projects clone</h1>
                 
-                <p>Login with a combination of either:</p>
-<ul>
-<li>Email and password</li>
-<li>Username and password</li>
-<li>Username and token</li>
-</ul>
+                <p>Clone a Project from Onepanel</p>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span><span class="w"> </span><span class="n">login</span><span class="w"> </span><span class="o">[</span><span class="n">OPTIONS</span><span class="o">]</span><span class="w"></span>
+<div class="codehilite"><pre><span></span><span class="n">onepanel</span><span class="w"> </span><span class="n">projects</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="o">[</span><span class="n">OPTIONS</span><span class="o">]</span><span class="w"> </span><span class="k">PATH</span><span class="w"> </span><span class="o">[</span><span class="n">DIRECTORY</span><span class="o">]</span><span class="w"></span>
 </pre></div>
 
 <h3 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
-<p><code>-e</code>, <code>--email</code>     Email you use to login to the website with.</p>
-<p><code>-u</code>, <code>--username</code>  The name you see in the top right of the website, once you log in.</p>
-<p><code>-p</code>, <code>--password</code>  Password you use when logging into the website.</p>
-<p><code>-t</code>, <code>--token</code>     One of the tokens that was created, from the settings &gt; tokens and variables page.</p>
-<p><code>--help</code>          Show this message and exit.</p>
+<p><code>--help</code>        Show this message and exit.</p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p>Log in with email/password prompt:
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">login</span>
-</pre></div></p>
-<p>Log in with email and token:
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">login</span> <span class="o">-</span><span class="n">u</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">t</span> <span class="o">&lt;</span><span class="n">token</span><span class="o">&gt;</span>
-</pre></div></p>
+<p>Clone Project from Onepanel in a directory with the Project name:</p>
+<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">projects</span> <span class="n">clone</span> <span class="o">&lt;</span><span class="n">account</span><span class="o">&gt;/</span><span class="n">projects</span><span class="o">/&lt;</span><span class="n">project</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+</pre></div>
+
+<p>Clone Project from Onepanel in a directory with a different name than Project name:</p>
+<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">projects</span> <span class="n">clone</span> <span class="o">&lt;</span><span class="n">account</span><span class="o">&gt;/</span><span class="n">projects</span><span class="o">/&lt;</span><span class="n">project</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">directory</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+</pre></div>
+
+<p>Clone Project from Onepanel in current working directory:</p>
+<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">projects</span> <span class="n">clone</span> <span class="o">&lt;</span><span class="n">account</span><span class="o">&gt;/</span><span class="n">projects</span><span class="o">/&lt;</span><span class="n">project</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span> <span class="p">.</span>
+</pre></div>
                 
                   
                 
@@ -1161,7 +1157,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../projects-create/" title="onepanel projects create" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1170,19 +1166,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Overview
+                onepanel projects create
               </span>
             </div>
           </a>
         
         
-          <a href="../logout/" title="onepanel logout" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../datasets-init/" title="onepanel datasets init" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                onepanel logout
+                onepanel datasets init
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

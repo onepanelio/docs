@@ -131,6 +131,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://docs.onepanel.io/cli/projects-clone/</loc>
+     <lastmod>2019-10-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://docs.onepanel.io/cli/datasets-init/</loc>
      <lastmod>2019-10-19</lastmod>
      <changefreq>daily</changefreq>
