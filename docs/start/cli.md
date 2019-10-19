@@ -7,21 +7,22 @@ To install Onepanel's CLI via pip :
 pip install -U onepanel
 ```
 
-We recommend installing onepanel into a python virtual environment, or a conda environment if you'd prefer.
-
-Example installation for python virtual environment
-```bash
-pip[pip3] install virtualenv
-mkdir folder_to_hold_virtual_python
-cd folder_to_hold_virtual_python
-virtualenv venv_2_7_16[<folder_that_tells_you_what_venv>]
-cd venv_2_7_16
-source bin/activate
-pip install -U onepanel
-```
-
 !!! note "Note" 
     CLI is pre-installed if you are using Onepanel Workspaces or Jobs.
+
+!!! tip "Tip" 
+    We recommend installing onepanel into a python virtual environment, or a conda environment if you'd prefer.
+
+    Example installation for python virtual environment:
+    ```bash
+    pip install virtualenv
+    mkdir folder_to_hold_virtual_python
+    cd folder_to_hold_virtual_python
+    virtualenv venv_2_7_16[<folder_that_tells_you_what_venv>]
+    cd venv_2_7_16
+    source bin/activate
+    pip install -U onepanel
+    ```
 
 !!! tip "Tip" 
     The CLI is compatible with Python 2.7.x and Python >= 3.6.x, if you have both versions installed, you will need to use pip3 for Python >= 3.6.x.
