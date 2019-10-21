@@ -1,7 +1,7 @@
 You can create a project from the web interface or using the CLI.
 
 !!! note "Note"
-    To create a project via the CLI [see these instructions](/cli/projects.md)
+    To create a project via the CLI [see these instructions](/cli/projects-create)
 
 To create project using the web interface:
 
