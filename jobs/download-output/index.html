@@ -13,7 +13,7 @@
         <meta name="description" content="Extensible machine learning and deep learning platform on GPUs">
       
       
-        <link rel="canonical" href="https://docs.onepanel.io/cli/environments-list/">
+        <link rel="canonical" href="https://docs.onepanel.io/jobs/download-output/">
       
       
         <meta name="author" content="Onepanel, Inc.">
@@ -42,7 +42,7 @@
     
     
       
-        <title>onepanel environments list - Onepanel Documentation</title>
+        <title>Download output - Onepanel Documentation</title>
       
     
     
@@ -85,7 +85,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#syntax" tabindex="1" class="md-skip">
+      <a href="#download-job-output-from-web-interface" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -111,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                onepanel environments list
+                Download output
               
             </span>
           
@@ -508,10 +508,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Jobs
@@ -529,7 +531,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../jobs/index.md" title="Overview" class="md-nav__link">
+    <a href="../index.md" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -541,7 +543,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../jobs/create.md" title="Create a job" class="md-nav__link">
+    <a href="../create.md" title="Create a job" class="md-nav__link">
       Create a job
     </a>
   </li>
@@ -553,7 +555,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../jobs/tensorboard/" title="TensorBoard metrics" class="md-nav__link">
+    <a href="../tensorboard/" title="TensorBoard metrics" class="md-nav__link">
       TensorBoard metrics
     </a>
   </li>
@@ -565,7 +567,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../jobs/save-output/" title="Save output" class="md-nav__link">
+    <a href="../save-output/" title="Save output" class="md-nav__link">
       Save output
     </a>
   </li>
@@ -575,11 +577,52 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../jobs/download-output/" title="Download output" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Download output
+      </label>
+    
+    <a href="./" title="Download output" class="md-nav__link md-nav__link--active">
       Download output
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-job-output-from-web-interface" class="md-nav__link">
+    Download Job output from web interface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-job-output-from-cli" class="md-nav__link">
+    Download Job output from CLI
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -652,12 +695,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
       CLI
@@ -675,7 +716,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Overview" class="md-nav__link">
+    <a href="../../cli/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -687,7 +728,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../login/" title="onepanel login" class="md-nav__link">
+    <a href="../../cli/login/" title="onepanel login" class="md-nav__link">
       onepanel login
     </a>
   </li>
@@ -699,7 +740,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../logout/" title="onepanel logout" class="md-nav__link">
+    <a href="../../cli/logout/" title="onepanel logout" class="md-nav__link">
       onepanel logout
     </a>
   </li>
@@ -711,7 +752,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects-init/" title="onepanel projects init" class="md-nav__link">
+    <a href="../../cli/projects-init/" title="onepanel projects init" class="md-nav__link">
       onepanel projects init
     </a>
   </li>
@@ -723,7 +764,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects-create/" title="onepanel projects create" class="md-nav__link">
+    <a href="../../cli/projects-create/" title="onepanel projects create" class="md-nav__link">
       onepanel projects create
     </a>
   </li>
@@ -735,7 +776,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects-clone/" title="onepanel projects clone" class="md-nav__link">
+    <a href="../../cli/projects-clone/" title="onepanel projects clone" class="md-nav__link">
       onepanel projects clone
     </a>
   </li>
@@ -747,7 +788,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../datasets-init/" title="onepanel datasets init" class="md-nav__link">
+    <a href="../../cli/datasets-init/" title="onepanel datasets init" class="md-nav__link">
       onepanel datasets init
     </a>
   </li>
@@ -759,7 +800,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../datasets-create/" title="onepanel datasets create" class="md-nav__link">
+    <a href="../../cli/datasets-create/" title="onepanel datasets create" class="md-nav__link">
       onepanel datasets create
     </a>
   </li>
@@ -771,7 +812,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../jobs/" title="onepanel jobs" class="md-nav__link">
+    <a href="../../cli/jobs/" title="onepanel jobs" class="md-nav__link">
       onepanel jobs
     </a>
   </li>
@@ -783,7 +824,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../download/" title="onepanel download" class="md-nav__link">
+    <a href="../../cli/download/" title="onepanel download" class="md-nav__link">
       onepanel download
     </a>
   </li>
@@ -793,58 +834,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        onepanel environments list
-      </label>
-    
-    <a href="./" title="onepanel environments list" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../cli/environments-list/" title="onepanel environments list" class="md-nav__link">
       onepanel environments list
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#syntax" class="md-nav__link">
-    Syntax
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#options" class="md-nav__link">
-    Options
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -854,7 +848,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../machine-types-list/" title="onepanel machine-types list" class="md-nav__link">
+    <a href="../../cli/machine-types-list/" title="onepanel machine-types list" class="md-nav__link">
       onepanel machine-types list
     </a>
   </li>
@@ -866,7 +860,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../volume-types-list/" title="onepanel volume-types list" class="md-nav__link">
+    <a href="../../cli/volume-types-list/" title="onepanel volume-types list" class="md-nav__link">
       onepanel volume-types list
     </a>
   </li>
@@ -1124,22 +1118,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#syntax" class="md-nav__link">
-    Syntax
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#options" class="md-nav__link">
-    Options
+  <a href="#download-job-output-from-web-interface" class="md-nav__link">
+    Download Job output from web interface
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#download-job-output-from-cli" class="md-nav__link">
+    Download Job output from CLI
+  </a>
   
 </li>
       
@@ -1159,18 +1147,34 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/onepanelio/docs/edit/master/docs/cli/environments-list.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/onepanelio/docs/edit/master/docs/jobs/download-output.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>onepanel environments list</h1>
+                  <h1>Download output</h1>
                 
-                <p>Show a list of available environments.</p>
-<h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span><span class="w"> </span><span class="n">environments</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">[</span><span class="n">OPTIONS</span><span class="o">]</span><span class="w"></span>
-</pre></div>
-
-<h3 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
-<p><code>--help</code>    Show this message and exit.</p>
+                <p>You can download Job output through the web interface, CLI or SDK.</p>
+<h2 id="download-job-output-from-web-interface">Download Job output from web interface<a class="headerlink" href="#download-job-output-from-web-interface" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Click on a Job.</li>
+<li>Click on the <strong>Output</strong> tab.
+<img alt="" src="../../assets/img/download-output-190227.png" /></li>
+<li>Click <strong>Download</strong> and then click <strong>Download Archive</strong>
+<img alt="" src="../../assets/img/download-output-190348.png" /></li>
+<li>You can also navigate to any file in file browser and download it individually by clicking the <strong>Download</strong> button.</li>
+</ol>
+<h2 id="download-job-output-from-cli">Download Job output from CLI<a class="headerlink" href="#download-job-output-from-cli" title="Permanent link">&para;</a></h2>
+<div class="admonition tip tip">
+<p class="admonition-title">Tip</p>
+<p>See <a href="/cli/download/#jobs">onepanel download</a> command for examples and more information.</p>
+</div>
+<ol>
+<li>Click on a Job.</li>
+<li>Click on the <strong>Output</strong> tab.
+<img alt="" src="../../assets/img/download-output-190227.png" /></li>
+<li>Click <strong>Download</strong> and then click <i class="fa fa-clipboard"></i> to copy the CLI command.
+<img alt="" src="../../assets/img/download-output-190348.png" /></li>
+<li>Paste the CLI command into your terminal.</li>
+</ol>
                 
                   
                 
@@ -1191,7 +1195,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../download/" title="onepanel download" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../save-output/" title="Save output" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1200,19 +1204,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                onepanel download
+                Save output
               </span>
             </div>
           </a>
         
         
-          <a href="../machine-types-list/" title="onepanel machine-types list" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../cli/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                onepanel machine-types list
+                Overview
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

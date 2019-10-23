@@ -101,13 +101,18 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://docs.onepanel.io/jobs/tensorboard/</loc>
+     <lastmod>2019-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://docs.onepanel.io/jobs/save-output/</loc>
+     <lastmod>2019-10-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.onepanel.io/jobs/download-output/</loc>
+     <lastmod>2019-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
