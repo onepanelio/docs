@@ -33,10 +33,11 @@ nav:
     - Demo - Computer Vision: start/computer-vision.md
   - Projects:
     - Overview: projects/index.md
-    - Create a new project: projects/create.md
+    - Create a project: projects/create.md
     - Fork a project: projects/forking.md
     - Manage members: projects/members.md
     - Manage repositories: projects/repositories.md
+    - Local repository: projects/local-repository.md
     - Delete a project: projects/delete.md
   - Workspaces:
     - Overview: workspaces/index.md
@@ -47,9 +48,13 @@ nav:
     - Delete a workspace: workspaces/delete.md
   - Jobs:
     - Overview: jobs/index.md
+    - Create a job: jobs/create.md
+    - TensorBoard metrics: jobs/tensorboard.md
+    - Save output: jobs/save-output.md
+    - Download output: jobs/download-output.md
   - Datasets:
     - Overview: datasets/index.md
-    - Create: datasets/create.md
+    - Create a dataset: datasets/create.md
     - Mount a dataset: datasets/mount.md
   - CLI:
     - Overview: cli/index.md
