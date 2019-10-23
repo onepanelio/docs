@@ -13,7 +13,7 @@
         <meta name="description" content="Extensible machine learning and deep learning platform on GPUs">
       
       
-        <link rel="canonical" href="https://docs.onepanel.io/cli/jobs/">
+        <link rel="canonical" href="https://docs.onepanel.io/projects/local-repository/">
       
       
         <meta name="author" content="Onepanel, Inc.">
@@ -42,7 +42,7 @@
     
     
       
-        <title>onepanel jobs - Onepanel Documentation</title>
+        <title>Local repository - Onepanel Documentation</title>
       
     
     
@@ -85,6 +85,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#using-a-local-repository" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -107,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                onepanel jobs
+                Local repository
               
             </span>
           
@@ -300,10 +304,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Projects
@@ -321,7 +327,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../projects/" title="Overview" class="md-nav__link">
+    <a href="../" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -333,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../projects/create/" title="Create a project" class="md-nav__link">
+    <a href="../create/" title="Create a project" class="md-nav__link">
       Create a project
     </a>
   </li>
@@ -345,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../projects/forking/" title="Fork a project" class="md-nav__link">
+    <a href="../forking/" title="Fork a project" class="md-nav__link">
       Fork a project
     </a>
   </li>
@@ -357,7 +363,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../projects/members/" title="Manage members" class="md-nav__link">
+    <a href="../members/" title="Manage members" class="md-nav__link">
       Manage members
     </a>
   </li>
@@ -369,7 +375,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../projects/repositories/" title="Manage repositories" class="md-nav__link">
+    <a href="../repositories/" title="Manage repositories" class="md-nav__link">
       Manage repositories
     </a>
   </li>
@@ -379,11 +385,65 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../projects/local-repository/" title="Local repository" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Local repository
+      </label>
+    
+    <a href="./" title="Local repository" class="md-nav__link md-nav__link--active">
       Local repository
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-a-local-repository" class="md-nav__link">
+    Using a Local Repository
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-a-workspace" class="md-nav__link">
+    In a Workspace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-your-local-machine" class="md-nav__link">
+    On your local machine
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -393,7 +453,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../projects/delete/" title="Delete a project" class="md-nav__link">
+    <a href="../delete/" title="Delete a project" class="md-nav__link">
       Delete a project
     </a>
   </li>
@@ -636,12 +696,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
       CLI
@@ -659,7 +717,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Overview" class="md-nav__link">
+    <a href="../../cli/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -671,7 +729,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../login/" title="onepanel login" class="md-nav__link">
+    <a href="../../cli/login/" title="onepanel login" class="md-nav__link">
       onepanel login
     </a>
   </li>
@@ -683,7 +741,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../logout/" title="onepanel logout" class="md-nav__link">
+    <a href="../../cli/logout/" title="onepanel logout" class="md-nav__link">
       onepanel logout
     </a>
   </li>
@@ -695,7 +753,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects-init/" title="onepanel projects init" class="md-nav__link">
+    <a href="../../cli/projects-init/" title="onepanel projects init" class="md-nav__link">
       onepanel projects init
     </a>
   </li>
@@ -707,7 +765,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects-create/" title="onepanel projects create" class="md-nav__link">
+    <a href="../../cli/projects-create/" title="onepanel projects create" class="md-nav__link">
       onepanel projects create
     </a>
   </li>
@@ -719,7 +777,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects-clone/" title="onepanel projects clone" class="md-nav__link">
+    <a href="../../cli/projects-clone/" title="onepanel projects clone" class="md-nav__link">
       onepanel projects clone
     </a>
   </li>
@@ -731,7 +789,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../datasets-init/" title="onepanel datasets init" class="md-nav__link">
+    <a href="../../cli/datasets-init/" title="onepanel datasets init" class="md-nav__link">
       onepanel datasets init
     </a>
   </li>
@@ -743,7 +801,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../datasets-create/" title="onepanel datasets create" class="md-nav__link">
+    <a href="../../cli/datasets-create/" title="onepanel datasets create" class="md-nav__link">
       onepanel datasets create
     </a>
   </li>
@@ -753,18 +811,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="onepanel jobs" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../cli/jobs/" title="onepanel jobs" class="md-nav__link">
       onepanel jobs
     </a>
-    
   </li>
 
         
@@ -774,7 +825,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../download/" title="onepanel download" class="md-nav__link">
+    <a href="../../cli/download/" title="onepanel download" class="md-nav__link">
       onepanel download
     </a>
   </li>
@@ -786,7 +837,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../environments-list/" title="onepanel environments list" class="md-nav__link">
+    <a href="../../cli/environments-list/" title="onepanel environments list" class="md-nav__link">
       onepanel environments list
     </a>
   </li>
@@ -798,7 +849,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../machine-types-list/" title="onepanel machine-types list" class="md-nav__link">
+    <a href="../../cli/machine-types-list/" title="onepanel machine-types list" class="md-nav__link">
       onepanel machine-types list
     </a>
   </li>
@@ -810,7 +861,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../volume-types-list/" title="onepanel volume-types list" class="md-nav__link">
+    <a href="../../cli/volume-types-list/" title="onepanel volume-types list" class="md-nav__link">
       onepanel volume-types list
     </a>
   </li>
@@ -1056,17 +1107,101 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-a-local-repository" class="md-nav__link">
+    Using a Local Repository
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-a-workspace" class="md-nav__link">
+    In a Workspace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-your-local-machine" class="md-nav__link">
+    On your local machine
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/onepanelio/docs/edit/master/docs/cli/jobs.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/onepanelio/docs/edit/master/docs/projects/local-repository.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>onepanel jobs</h1>
+                  <h1>Local repository</h1>
                 
-                
+                <div class="admonition tip tip">
+<p class="admonition-title">Tip</p>
+<p>You can identify <strong>Local Repositories</strong> by their domain <a href="https://git.onepanel.io">https://git.onepanel.io</a></p>
+</div>
+<p>Each project comes with its own <strong>Local Repository</strong>, which is a Git repository managed by Onepanel. This repository is special because once you add a project member, they can automatically pull from and push to this repository instead of having to manage their credentials separately. Once you remove a member from a project, they are also removed from this repository. Other than these special properties, you can treat this repository just like your other Git repositories.
+<img alt="" src="../../assets/img/repositories-174826.png" /></p>
+<h2 id="using-a-local-repository">Using a Local Repository<a class="headerlink" href="#using-a-local-repository" title="Permanent link">&para;</a></h2>
+<h3 id="in-a-workspace">In a Workspace<a class="headerlink" href="#in-a-workspace" title="Permanent link">&para;</a></h3>
+<p>In a Onepanel Workspace, you can simply select this repository:</p>
+<p><img alt="" src="../../assets/img/local-repository-173134.png" /></p>
+<p>It will then be available in your <code>code</code> folder. You can then add and commit files and push to it:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># add and commit your files</span>
+git push
+</pre></div>
+
+<h3 id="on-your-local-machine">On your local machine<a class="headerlink" href="#on-your-local-machine" title="Permanent link">&para;</a></h3>
+<p>First, you need to get your git credentials for this repository:</p>
+<ol>
+<li>In top right corner, click your username and then click <strong>Account</strong></li>
+<li>Click <strong>Git credentials</strong></li>
+<li>Next to <strong>local-repository-token</strong>, click <strong>SHOW</strong> to view your password
+<img alt="" src="../../assets/img/local-repository-173252.png" /></li>
+<li>Use this username and password in your <code>git clone/push</code> commands.</li>
+</ol>
+<p>You can then clone this repository:</p>
+<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">git</span><span class="p">.</span><span class="n">onepanel</span><span class="p">.</span><span class="n">io</span><span class="o">/&lt;</span><span class="n">account</span><span class="o">&gt;/&lt;</span><span class="n">project</span><span class="o">&gt;</span><span class="p">.</span><span class="n">git</span>
+</pre></div>
+
+<p>Or, add it at as a remote to an existing repository:</p>
+<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="k">add</span> <span class="n">onepanel</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">git</span><span class="p">.</span><span class="n">onepanel</span><span class="p">.</span><span class="n">io</span><span class="o">/&lt;</span><span class="n">account</span><span class="o">&gt;/&lt;</span><span class="n">project</span><span class="o">&gt;</span><span class="p">.</span><span class="n">git</span>
+</pre></div>
+
+<p>Then you can use it as you would normally use any git repository:</p>
+<div class="codehilite"><pre><span></span><span class="o">#</span> <span class="k">add</span> <span class="k">and</span> <span class="k">commit</span> <span class="n">your</span> <span class="n">files</span>
+<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">onepanel</span> <span class="n">master</span>
+</pre></div>
                 
                   
                 
@@ -1087,7 +1222,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../datasets-create/" title="onepanel datasets create" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../repositories/" title="Manage repositories" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1096,19 +1231,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                onepanel datasets create
+                Manage repositories
               </span>
             </div>
           </a>
         
         
-          <a href="../download/" title="onepanel download" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../delete/" title="Delete a project" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                onepanel download
+                Delete a project
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
