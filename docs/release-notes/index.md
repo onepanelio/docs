@@ -1,4 +1,5 @@
-## October 23rd 2019
+## v2.7.10 - October 23rd 2019
+
 
 ### Features
 
@@ -32,7 +33,7 @@ client.jobs.download_output(2, project_uid='eyeyeye', archive_flag=True, target_
 
 
 
-### Experiments
+### Alpha features
 
 * Addition of Job Metrics. You can now use the Onepanel SDK to track metrics for jobs and see a graph summarizing them upon job completion.
 * ROS + Gazebo and Unreal Engine have been added as environments. If you'd like to see a demo, contact us! More on this to come soon.
