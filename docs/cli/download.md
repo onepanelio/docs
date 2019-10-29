@@ -3,7 +3,7 @@ Download Dataset or Job output.
 ## Syntax
 
 ```
-onepanel download [OPTIONS]
+onepanel download [OPTIONS] PATH [DIRECTORY]
 ```
 
 Dataset download syntax will look like this:
