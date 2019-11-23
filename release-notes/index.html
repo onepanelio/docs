@@ -1223,8 +1223,26 @@
 <li>Similarly, Project Datasets have been added. See what datasets are in use for a project.</li>
 <li>Dataset File Uploading through UI. You can now create folders and drag-and-drop files to a dataset from the UI! </li>
 <li>Addition of a small tour on the Projects page to give a quick explanation on what workspaces and jobs are.</li>
-<li>You can now mount additional datasets while a workspace is running.</li>
+<li>You can now mount additional datasets while a workspace is running.
+<img alt="" src="../assets/img/Screenshot_20191025_105740.png" /></li>
+<li>You can now add a target directory for downloading job output, through the SDK</li>
 </ul>
+<p>Example code from Jupyter Lab Notebook, TensorFlow Workspace
+<div class="codehilite"><pre><span></span><span class="err">!</span><span class="n">onepanel</span> <span class="o">--</span><span class="n">version</span>
+<span class="c1"># Onepanel CLI, version 2.20.0</span>
+<span class="kn">from</span> <span class="nn">onepanel.models</span> <span class="kn">import</span> <span class="n">DatasetMount</span>
+<span class="kn">from</span> <span class="nn">onepanel.models</span> <span class="kn">import</span> <span class="n">ProjectRepository</span>
+<span class="kn">from</span> <span class="nn">onepanel.sdk</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">()</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">jobs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">project_uid</span><span class="o">=</span><span class="s1">&#39;eyeyeye&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">job</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<span class="c1"># completed</span>
+<span class="n">client</span><span class="o">.</span><span class="n">jobs</span><span class="o">.</span><span class="n">download_output</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">project_uid</span><span class="o">=</span><span class="s1">&#39;eyeyeye&#39;</span><span class="p">,</span> <span class="n">archive_flag</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">target_directory</span><span class="o">=</span><span class="s1">&#39;/onepanel/output/test&#39;</span><span class="p">)</span>
+<span class="c1"># Attempting to download the compressed output file to /onepanel/output/test directory.</span>
+<span class="c1"># Finished downloading.</span>
+<span class="c1"># True</span>
+</pre></div>
+<img alt="" src="../assets/img/Screenshot_20191025_111810.png" /></p>
 <h3 id="alpha-features">Alpha features<a class="headerlink" href="#alpha-features" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Addition of Job Metrics. You can now use the Onepanel SDK to track metrics for jobs and see a graph summarizing them upon job completion.</li>
@@ -1243,6 +1261,24 @@
 <li>Viewing a public profile while logged in did not display a back button.</li>
 <li>Job output download archive button was hidden</li>
 <li>Workspace icons (pytorch, etc) were sometimes the wrong size, making them look skewed.</li>
+<li>Duplicate tags were allowed in the API / Backend</li>
+<li>User session was not properly persisting inside of cvat.
+<div class="codehilite"><pre><span></span><span class="c1">-- Scenario: </span>
+<span class="n">Login</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">User</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+<span class="n">Login</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">CVAT</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="w"> </span>
+<span class="nf">Log</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">OnePanel</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">User</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="w"></span>
+<span class="n">Login</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">User</span><span class="w"> </span><span class="n">B</span><span class="w"></span>
+<span class="k">Go</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">same</span><span class="w"> </span><span class="n">CVAT</span><span class="w"> </span><span class="n">workspace</span><span class="w"></span>
+<span class="n">See</span><span class="w"> </span><span class="k">User</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">still</span><span class="w"> </span><span class="n">logged</span><span class="w"> </span><span class="ow">in</span><span class="p">.</span><span class="w"></span>
+</pre></div></li>
+<li>Fixed header that shows the current user logged in, for workspaces</li>
+<li>Fixed an issue with CVAT demo not allowing demo users to create tasks inside of CVAT.
+** An environment variable needs to be set.</li>
+<li>Added a new button to CVAT, so you can dump annotations and create a dataset in one go
+<img alt="" src="../assets/img/Screenshot_20191025_110456.png" /></li>
+<li>Unable to pass in no tags for a given entity</li>
+<li>CVAT "View Site" in Admin view, URL has been fixed</li>
+<li>CVAT - Assigning a task to a user causes the task to disappear from the assigner and assignee</li>
 </ul>
                 
                   
