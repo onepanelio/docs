@@ -33,4 +33,4 @@ To create a workspace:
 
 11. Click **Create** to create your Workspace. Depending on your machine type, this could take up to 5 minutes.
 
-[![](../assets/vid/Initiating-a-Workspace.gif)](https://youtu.be/m7wcSFt34Y8)
+[![](../assets/vid/initiating-a-workspace.gif)](https://youtu.be/m7wcSFt34Y8)

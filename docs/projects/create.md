@@ -29,3 +29,5 @@ If you pick to start with a starter project, you can select a project from the l
 ![](../assets/img/create-094404.png)
 
 7. Click **Create**.
+
+[![](../assets/vid/creating-projects.gif)](https://youtu.be/yTon_o8eld0)
