@@ -88,6 +88,9 @@ nav:
     - List of volume types: volume-types/index.md
   - Accounts:
     - Account Deletion: accounts/delete.md
+  - CVAT:
+    - Auto Annotation: CVAT/auto-annotation.md
+    - Create Annotation Model: CVAT/create_annotation_model.md
 markdown_extensions:
     - admonition
     - codehilite
