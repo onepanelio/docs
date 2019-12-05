@@ -1,11 +1,11 @@
 ## Training Model Through CVAT
 Once you have annotated enough data, you can train a model to pre-annotate rest of your images. This can save a lot of time in annotation. 
 
-1 - Annotate enough images in your CVAT task.\
-2 - Go back to your CVAT dashboard and click on `Create New Annotation Model` in that task. You will see a popup with few options.\
-3 - Select approprite model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).\
-4 - Select the machine type. A machine with multiple GPUs will speed up your training process.\
-5 - Enter optional arguments. See below for more details.\
+1 - Annotate enough images in your CVAT task.  
+2 - Go back to your CVAT dashboard and click on `Create New Annotation Model` in that task. You will see a popup with few options.  
+3 - Select approprite model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).  
+4 - Select the machine type. A machine with multiple GPUs will speed up your training process.  
+5 - Enter optional arguments. See below for more details.  
 
 ## Arguments (optional)
 
