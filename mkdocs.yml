@@ -86,6 +86,8 @@ nav:
     - Spot machines: machine-types/spot.md
   - Volume Types:
     - List of volume types: volume-types/index.md
+  - Accounts:
+    - Account Deletion: accounts/delete.md
 markdown_extensions:
     - admonition
     - codehilite
