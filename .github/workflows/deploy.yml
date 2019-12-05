@@ -1,4 +1,4 @@
-name: CI
+name: Deploy
 
 on:
   push:
@@ -13,13 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: install mkdocs
-      run: |
-        pip install wheel
-        pip install mkdocs
-        pip install mkdocs-material
+      run: pip install wheel mkdocs mkdocs-material
     - name: build mkdocs
-      run: |
-        mkdocs build
+      run: mkdocs build
     - name: deploy to github pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
