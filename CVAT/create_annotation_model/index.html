@@ -13,7 +13,7 @@
         <meta name="description" content="Extensible machine learning and deep learning platform on GPUs">
       
       
-        <link rel="canonical" href="https://docs.onepanel.io/projects/forking/">
+        <link rel="canonical" href="https://docs.onepanel.io/CVAT/create_annotation_model/">
       
       
         <meta name="author" content="Onepanel, Inc.">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Fork a project - Onepanel Documentation</title>
+        <title>Create Annotation Model - Onepanel Documentation</title>
       
     
     
@@ -85,6 +85,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#training-model-through-cvat" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -107,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Fork a project
+                Create Annotation Model
               
             </span>
           
@@ -312,12 +316,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Projects
@@ -335,7 +337,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Overview" class="md-nav__link">
+    <a href="../../projects/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -347,7 +349,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../create/" title="Create a project" class="md-nav__link">
+    <a href="../../projects/create/" title="Create a project" class="md-nav__link">
       Create a project
     </a>
   </li>
@@ -357,18 +359,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Fork a project" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../projects/forking/" title="Fork a project" class="md-nav__link">
       Fork a project
     </a>
-    
   </li>
 
         
@@ -378,7 +373,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../members/" title="Manage members" class="md-nav__link">
+    <a href="../../projects/members/" title="Manage members" class="md-nav__link">
       Manage members
     </a>
   </li>
@@ -390,7 +385,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../repositories/" title="Manage repositories" class="md-nav__link">
+    <a href="../../projects/repositories/" title="Manage repositories" class="md-nav__link">
       Manage repositories
     </a>
   </li>
@@ -402,7 +397,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../local-repository/" title="Local repository" class="md-nav__link">
+    <a href="../../projects/local-repository/" title="Local repository" class="md-nav__link">
       Local repository
     </a>
   </li>
@@ -414,7 +409,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../delete/" title="Delete a project" class="md-nav__link">
+    <a href="../../projects/delete/" title="Delete a project" class="md-nav__link">
       Delete a project
     </a>
   </li>
@@ -1125,10 +1120,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15" checked>
     
     <label class="md-nav__link" for="nav-15">
       CVAT
@@ -1146,7 +1143,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../CVAT/auto-annotation/" title="Auto Annotation" class="md-nav__link">
+    <a href="../auto-annotation/" title="Auto Annotation" class="md-nav__link">
       Auto Annotation
     </a>
   </li>
@@ -1156,11 +1153,52 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../CVAT/create_annotation_model/" title="Create Annotation Model" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Create Annotation Model
+      </label>
+    
+    <a href="./" title="Create Annotation Model" class="md-nav__link md-nav__link--active">
       Create Annotation Model
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#training-model-through-cvat" class="md-nav__link">
+    Training Model Through CVAT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments-optional" class="md-nav__link">
+    Arguments (optional)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1176,31 +1214,64 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#training-model-through-cvat" class="md-nav__link">
+    Training Model Through CVAT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments-optional" class="md-nav__link">
+    Arguments (optional)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/onepanelio/docs/edit/master/docs/projects/forking.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/onepanelio/docs/edit/master/docs/CVAT/create_annotation_model.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Fork a project</h1>
+                  <h1>Create Annotation Model</h1>
                 
-                <div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>When you fork a project, any associated <a href="/workspaces/">Workspaces</a> or the top 5 <a href="/jobs/">Jobs</a> are also forked with the project. You may incur storage charges for any Job that is forked.
-All forked projects have their visibility set to <strong>private</strong>.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>A forked Project's visibility is set to <strong>private</strong> by default.</p>
-</div>
-<p>To fork a project:</p>
-<ol>
-<li>Go to the Project's <strong>Overview</strong> page.</li>
-<li>Click <strong>Fork Project</strong>.
-<img alt="" src="../../assets/img/forking-163451.png" /></li>
-</ol>
+                <h2 id="training-model-through-cvat">Training Model Through CVAT<a class="headerlink" href="#training-model-through-cvat" title="Permanent link">&para;</a></h2>
+<p>Once you have annotated enough data, you can train a model to pre-annotate rest of your images. This can save a lot of time in annotation. </p>
+<p>1 - Annotate enough images in your CVAT task.
+2 - Go back to your CVAT dashboard and click on <code>Create New Annotation Model</code> in that task. You will see a popup with few options.
+3 - Select approprite model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).
+4 - Select the machine type. A machine with multiple GPUs will speed up your training process.
+5 - Enter optional arguments. See below for more details.</p>
+<h2 id="arguments-optional">Arguments (optional)<a class="headerlink" href="#arguments-optional" title="Permanent link">&para;</a></h2>
+<p>You can optionally specify some arguments in the <code>Arguments</code> field seperated by <code>,</code>. Here is a sample: <code>epochs=100,batch_size=24</code>. 
+- epochs : number of epochs to train your model for. By default, we will train for appropriate number of epochs depending upon the model.
+- batch_size : batch size for the training
+- initial_learning_rate : initial leanring rate for the model. We recommend you do not change this.</p>
                 
                   
                 
@@ -1221,7 +1292,7 @@ All forked projects have their visibility set to <strong>private</strong>.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../create/" title="Create a project" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../auto-annotation/" title="Auto Annotation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1230,25 +1301,11 @@ All forked projects have their visibility set to <strong>private</strong>.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Create a project
+                Auto Annotation
               </span>
             </div>
           </a>
         
-        
-          <a href="../members/" title="Manage members" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Manage members
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

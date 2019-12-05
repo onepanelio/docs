@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/img/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
     
     
       
@@ -46,12 +46,12 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
@@ -1177,6 +1177,54 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      CVAT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        CVAT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CVAT/auto-annotation/" title="Auto Annotation" class="md-nav__link">
+      Auto Annotation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CVAT/create_annotation_model/" title="Create Annotation Model" class="md-nav__link">
+      Create Annotation Model
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1299,13 +1347,13 @@
 <li>Workspace icons (pytorch, etc) were sometimes the wrong size, making them look skewed.</li>
 <li>Duplicate tags were allowed in the API / Backend</li>
 <li>User session was not properly persisting inside of cvat.
-<div class="codehilite"><pre><span></span><span class="c1">-- Scenario: </span>
-<span class="n">Login</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">User</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
-<span class="n">Login</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">CVAT</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="w"> </span>
-<span class="nf">Log</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">OnePanel</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">User</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="w"></span>
-<span class="n">Login</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">User</span><span class="w"> </span><span class="n">B</span><span class="w"></span>
-<span class="k">Go</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">same</span><span class="w"> </span><span class="n">CVAT</span><span class="w"> </span><span class="n">workspace</span><span class="w"></span>
-<span class="n">See</span><span class="w"> </span><span class="k">User</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">still</span><span class="w"> </span><span class="n">logged</span><span class="w"> </span><span class="ow">in</span><span class="p">.</span><span class="w"></span>
+<div class="codehilite"><pre><span></span><span class="err">-- Scenario: </span>
+<span class="err">Login as User A</span>
+<span class="err">Login to CVAT as user A. </span>
+<span class="err">Log out of OnePanel as User A.</span>
+<span class="err">Login as User B</span>
+<span class="err">Go to same CVAT workspace</span>
+<span class="err">See User A is still logged in.</span>
 </pre></div></li>
 <li>Fixed header that shows the current user logged in, for workspaces</li>
 <li>Fixed an issue with CVAT demo not allowing demo users to create tasks inside of CVAT.
@@ -1404,7 +1452,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.c648116f.js"></script>
+      <script src="../assets/javascripts/application.8e03edeb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       

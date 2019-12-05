@@ -255,4 +255,14 @@
      <lastmod>2019-12-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    <url>
+     <loc>https://docs.onepanel.io/CVAT/auto-annotation/</loc>
+     <lastmod>2019-12-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.onepanel.io/CVAT/create_annotation_model/</loc>
+     <lastmod>2019-12-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 </urlset>

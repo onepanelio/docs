@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/img/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
     
     
       
@@ -46,12 +46,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
       
       
     
     
-      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
@@ -1192,6 +1192,54 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      CVAT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        CVAT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CVAT/auto-annotation/" title="Auto Annotation" class="md-nav__link">
+      Auto Annotation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CVAT/create_annotation_model/" title="Create Annotation Model" class="md-nav__link">
+      Create Annotation Model
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1284,11 +1332,11 @@
 </pre></div>
 
 <p>Dataset download syntax will look like this:</p>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">download</span> <span class="o">&lt;</span><span class="n">account</span><span class="o">&gt;/</span><span class="n">datasets</span><span class="o">/&lt;</span><span class="n">dataset</span><span class="o">&gt;</span>
+<div class="codehilite"><pre><span></span><span class="err">onepanel download &lt;account&gt;/datasets/&lt;dataset&gt;</span>
 </pre></div>
 
 <p>Job output download syntax will look like this:</p>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">download</span> <span class="o">&lt;</span><span class="n">account</span><span class="o">&gt;/</span><span class="n">projects</span><span class="o">/&lt;</span><span class="n">project</span><span class="o">&gt;/</span><span class="n">jobs</span><span class="o">/&lt;</span><span class="n">job</span><span class="o">-</span><span class="nb">number</span><span class="o">&gt;</span>
+<div class="codehilite"><pre><span></span><span class="err">onepanel download &lt;account&gt;/projects/&lt;project&gt;/jobs/&lt;job-number&gt;</span>
 </pre></div>
 
 <h3 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
@@ -1302,28 +1350,28 @@
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="datasets">Datasets<a class="headerlink" href="#datasets" title="Permanent link">&para;</a></h3>
 <p>Download latest Dataset version:</p>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">download</span> <span class="n">onepanel</span><span class="o">-</span><span class="n">demo</span><span class="o">/</span><span class="n">datasets</span><span class="o">/</span><span class="n">mnist</span>
+<div class="codehilite"><pre><span></span><span class="err">onepanel download onepanel-demo/datasets/mnist</span>
 </pre></div>
 
 <p>Download a specific Dataset version:</p>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">download</span> <span class="n">onepanel</span><span class="o">-</span><span class="n">demo</span><span class="o">/</span><span class="n">datasets</span><span class="o">/</span><span class="n">mnist</span> <span class="o">-</span><span class="n">v</span> <span class="mi">2</span>
+<div class="codehilite"><pre><span></span><span class="err">onepanel download onepanel-demo/datasets/mnist -v 2</span>
 </pre></div>
 
 <p>Download Dataset into a specific directory (defaults to cwd if omitted):</p>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">download</span> <span class="n">onepanel</span><span class="o">-</span><span class="n">demo</span><span class="o">/</span><span class="n">datasets</span><span class="o">/</span><span class="n">mnist</span> <span class="n">mnist</span><span class="o">-</span><span class="n">dataset</span>
+<div class="codehilite"><pre><span></span><span class="err">onepanel download onepanel-demo/datasets/mnist mnist-dataset</span>
 </pre></div>
 
 <h3 id="jobs">Jobs<a class="headerlink" href="#jobs" title="Permanent link">&para;</a></h3>
 <p>Download Job output:</p>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">download</span> <span class="n">onepanel</span><span class="o">-</span><span class="n">demo</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">jobs</span><span class="o">/</span><span class="mi">100</span>
+<div class="codehilite"><pre><span></span><span class="err">onepanel download onepanel-demo/projects/examples/jobs/100</span>
 </pre></div>
 
 <p>Download Job output as a compressed file:</p>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">download</span> <span class="n">onepanel</span><span class="o">-</span><span class="n">demo</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">jobs</span><span class="o">/</span><span class="mi">100</span> <span class="c1">--archive</span>
+<div class="codehilite"><pre><span></span><span class="err">onepanel download onepanel-demo/projects/examples/jobs/100 --archive</span>
 </pre></div>
 
 <p>Download Job output into a specific directory (defaults to cwd if omitted):</p>
-<div class="codehilite"><pre><span></span><span class="n">onepanel</span> <span class="n">download</span> <span class="n">onepanel</span><span class="o">-</span><span class="n">demo</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">jobs</span><span class="o">/</span><span class="mi">100</span> <span class="n">job</span><span class="o">-</span><span class="mi">100</span><span class="o">-</span><span class="k">output</span>
+<div class="codehilite"><pre><span></span><span class="err">onepanel download onepanel-demo/projects/examples/jobs/100 job-100-output</span>
 </pre></div>
                 
                   
@@ -1413,7 +1461,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      <script src="../../assets/javascripts/application.8e03edeb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
