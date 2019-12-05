@@ -8,12 +8,13 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-18.04
 
     steps:
     - uses: actions/checkout@v1
     - name: install mkdocs
       run: |
+        pip install wheel
         pip install mkdocs
         pip install mkdocs-material
     - name: build mkdocs
