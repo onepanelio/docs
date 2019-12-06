@@ -13,3 +13,4 @@ You can optionally specify some arguments in the `Arguments` field seperated by 
 - epochs : number of epochs to train your model for. By default, we will train for appropriate number of epochs depending upon the model.
 - batch_size : batch size for the training
 - initial_learning_rate : initial leanring rate for the model. We recommend you do not change this.
+- num_clones (default=1): number of gpus to train model on 
