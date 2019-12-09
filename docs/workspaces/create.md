@@ -1,3 +1,7 @@
+<a href="https://youtu.be/m7wcSFt34Y8" target="_blank">
+![](../assets/vid/initiating-a-workspace.gif)
+</a>
+
 To create a workspace:
 
 1. Go to a Project and click **Workspaces**.
@@ -32,5 +36,3 @@ To create a workspace:
 ![](../assets/img/create-195238.png)
 
 11. Click **Create** to create your Workspace. Depending on your machine type, this could take up to 5 minutes.
-
-[![](../assets/vid/initiating-a-workspace.gif)](https://youtu.be/m7wcSFt34Y8)

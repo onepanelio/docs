@@ -5,6 +5,10 @@
 !!! note "Note"
     A forked Project's visibility is set to **private** by default.
 
+<a href="https://youtu.be/rIbGHmS--2g" target="_blank">
+![](../assets/vid/fork-project.gif)
+</a>
+
 To fork a project:
 
 1. Go to the Project's **Overview** page.
