@@ -9,11 +9,16 @@ Once you have annotated enough data, you can train a model to pre-annotate rest 
 
 ## Arguments (optional)
 
-You can optionally specify some arguments in the `Arguments` field seperated by `,`. 
+You can optionally specify some arguments in the `Arguments` field seperated by `;`. 
 
-Here is a sample: `epochs=100,batch_size=24`. 
+Here is a sample: `epochs=100;batch_size=24`. 
 
 - epochs : number of epochs to train your model for. By default, we will train for appropriate number of epochs depending upon the model.
 - batch_size : batch size for the training
-- initial_learning_rate : initial leanring rate for the model. We recommend you do not change this.
+- initial_learning_rate : initial learning rate for the model. We recommend you do not change this.
 - num_clones (default=1): number of gpus to train model on 
+
+If you select a Machine type with 4 GPUs (Tesla V100), the following command can be used:
+`epochs=300000;num_clones=4;batch_24;`
+
+- Note that num_clones is 4 because there are 4 gpus available.
