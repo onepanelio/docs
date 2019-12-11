@@ -26,6 +26,8 @@ extra:
       link: 'https://facebook.com/onepanelio'
 nav:
   - About Onepanel: index.md
+  - Terms of Service: terms-of-service/index.md
+  - Privacy Policy: privacy-policy/index.md
   - Release notes: release-notes/index.md
   - Get Started:
     - Core concepts: start/core-concepts.md
