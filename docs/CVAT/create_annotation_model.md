@@ -22,3 +22,7 @@ If you select a Machine type with 4 GPUs (Tesla V100), the following command can
 `epochs=300000;num_clones=4;batch_24;`
 
 - Note that num_clones is 4 because there are 4 gpus available.
+
+## Adding your own base model to CVAT
+
+You can also add your own base models to CVAT via Onepanel.  Please email us at info@onepanel.io to learn how.
