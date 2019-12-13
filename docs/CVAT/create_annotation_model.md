@@ -7,7 +7,7 @@ Once you have annotated enough data, you can train a model to pre-annotate rest 
 4 - Select the machine type. A machine with multiple GPUs will speed up your training process.  
 5 - Enter optional arguments. See below for more details.  
 
-![CVAT flowchart](https://github.com/onepanelio/images/blob/master/auto-annotation-v.2.0.png)
+![CVAT flowchart](https://github.com/onepanelio/images/blob/master/auto-annotation-v.2.0.png?raw=true)
 
 ## Arguments (optional)
 
