@@ -3,7 +3,7 @@ Once you have annotated enough data, you can train a model to pre-annotate rest 
 
 1 - Annotate enough images in your CVAT task.  
 2 - Go back to your CVAT dashboard and click on `Create New Annotation Model` in that task. You will see a popup with few options.  
-3 - Select approprite model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).  
+3 - Select appropriate model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).  
 4 - Select the machine type. A machine with multiple GPUs will speed up your training process.  
 5 - Enter optional arguments. See below for more details.  
 
@@ -23,7 +23,7 @@ Here is a sample: `epochs=100;batch_size=24`.
 If you select a Machine type with 4 GPUs (Tesla V100), the following command can be used:
 `epochs=300000;num_clones=4;batch_24;`
 
-- Note that num_clones is 4 because there are 4 gpus available.
+- Note that num_clones is 4 because there are 4 GPUs available.
 
 ## Adding your own base model to CVAT
 
