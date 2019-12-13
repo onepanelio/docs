@@ -1,11 +1,11 @@
+<a href="https://youtu.be/yTon_o8eld0" target="_blank">
+![](../assets/vid/creating-projects.gif)
+</a>
+
 You can create a project from the web interface or using the CLI.
 
 !!! note "Note"
     To create a project via the CLI [see these instructions](/cli/projects-create)
-    
-<a href="https://youtu.be/yTon_o8eld0" target="_blank">
-![](../assets/vid/creating-projects.gif)
-</a>
 
 To create project using the web interface:
 

@@ -1,3 +1,7 @@
+<a href="https://youtu.be/f-Qyw6wmky8" target="_blank">
+![](../assets/vid/add-remove-members.gif)
+</a>
+
 ## Add members
 
 1. Go to a Project and click **Settings** in the side menu or in the Project overview card.
