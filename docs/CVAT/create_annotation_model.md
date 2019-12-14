@@ -28,3 +28,9 @@ If you select a Machine type with 4 GPUs (Tesla V100), the following command can
 ## Adding your own base model to CVAT
 
 You can also add your own base models to CVAT via Onepanel.  Please email us at info@onepanel.io to learn how.
+
+## Open source code
+
+You can find the code that triggers dataset creation, base model pulling, model training, and model conversion here:
+
+https://github.com/onepanelio/cvat-training
