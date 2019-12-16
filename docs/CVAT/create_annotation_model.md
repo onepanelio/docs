@@ -1,11 +1,14 @@
-## Training Model Through CVAT
-Once you have annotated enough data, you can train a model to pre-annotate rest of your images. This can save a lot of time in annotation. 
+## Why Pre-Annotate?
+Pre-annotation will cut the time to annotate large amounts of data by orders of magnitude.  The idea is simple, annotate once then QC each successive dataset after.
+Once you have annotated enough data, you can train a model to pre-annotate the rest of your images with a few button clicks.
 
-1 - Annotate enough images in your CVAT task.  
-2 - Go back to your CVAT dashboard and click on `Create New Annotation Model` in that task. You will see a popup with few options.  
-3 - Select appropriate model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).  
-4 - Select the machine type. A machine with multiple GPUs will speed up your training process.  
-5 - Enter optional arguments. See below for more details.  
+## Training Model Through CVAT
+
+1 - Annotate enough images in your CVAT task.  
+2 - Go back to your CVAT dashboard and click on `Create New Annotation Model` in that task. You will see a popup with a few options.  
+3 - Select the appropriate model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).  
+4 - Select the machine type. A machine with multiple GPUs will speed up your training process.  
+5 - Enter optional arguments. See below for more details.  
 
 ![CVAT flowchart](../assets/img/auto-annotation-v.2.0.png?raw=true)
 
@@ -15,10 +18,10 @@ You can optionally specify some arguments in the `Arguments` field seperated by 
 
 Here is a sample: `epochs=100;batch_size=24`. 
 
-- epochs : number of epochs to train your model for. By default, we will train for appropriate number of epochs depending upon the model.
+- epochs : number of epochs to train your model for. By default, we will train for an appropriate number of epochs depending upon the model.
 - batch_size : batch size for the training
 - initial_learning_rate : initial learning rate for the model. We recommend you do not change this.
-- num_clones (default=1): number of gpus to train model on 
+- num_clones (default=1): number of GPUs to train the model 
 
 If you select a Machine type with 4 GPUs (Tesla V100), the following command can be used:
 `epochs=300000;num_clones=4;batch_24;`
@@ -27,7 +30,7 @@ If you select a Machine type with 4 GPUs (Tesla V100), the following command can
 
 ## Adding your own base model to CVAT
 
-You can also add your own base models to CVAT via Onepanel.  Please email us at info@onepanel.io to learn how.
+You can also add your own base models to CVAT via Onepanel.  Please email us at info@onepanel.io to learn how.
 
 ## Open source code
 
