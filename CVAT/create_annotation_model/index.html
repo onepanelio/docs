@@ -110,7 +110,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#training-model-through-cvat" tabindex="1" class="md-skip">
+      <a href="#why-pre-annotate" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1215,6 +1215,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#why-pre-annotate" class="md-nav__link">
+    Why Pre-Annotate?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#training-model-through-cvat" class="md-nav__link">
     Training Model Through CVAT
   </a>
@@ -1277,6 +1284,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#why-pre-annotate" class="md-nav__link">
+    Why Pre-Annotate?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#training-model-through-cvat" class="md-nav__link">
     Training Model Through CVAT
   </a>
@@ -1325,22 +1339,24 @@
                 
                   <h1>Create Annotation Model</h1>
                 
-                <h2 id="training-model-through-cvat">Training Model Through CVAT<a class="headerlink" href="#training-model-through-cvat" title="Permanent link">&para;</a></h2>
-<p>Once you have annotated enough data, you can train a model to pre-annotate rest of your images. This can save a lot of time in annotation. </p>
-<p>1 - Annotate enough images in your CVAT task.<br />
-2 - Go back to your CVAT dashboard and click on <code>Create New Annotation Model</code> in that task. You will see a popup with few options.<br />
-3 - Select appropriate model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).<br />
-4 - Select the machine type. A machine with multiple GPUs will speed up your training process.<br />
-5 - Enter optional arguments. See below for more details.  </p>
+                <h2 id="why-pre-annotate">Why Pre-Annotate?<a class="headerlink" href="#why-pre-annotate" title="Permanent link">&para;</a></h2>
+<p>Pre-annotation will cut the time to annotate large amounts of data by orders of magnitude.  The idea is simple, annotate once then QC each successive dataset after.
+Once you have annotated enough data, you can train a model to pre-annotate the rest of your images with a few button clicks.</p>
+<h2 id="training-model-through-cvat">Training Model Through CVAT<a class="headerlink" href="#training-model-through-cvat" title="Permanent link">&para;</a></h2>
+<p>1 - Annotate enough images in your CVAT task.  
+2 - Go back to your CVAT dashboard and click on <code>Create New Annotation Model</code> in that task. You will see a popup with a few options.  
+3 - Select the appropriate model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).  
+4 - Select the machine type. A machine with multiple GPUs will speed up your training process.  
+5 - Enter optional arguments. See below for more details.  </p>
 <p><img alt="CVAT flowchart" src="../../assets/img/auto-annotation-v.2.0.png?raw=true" /></p>
 <h2 id="arguments-optional">Arguments (optional)<a class="headerlink" href="#arguments-optional" title="Permanent link">&para;</a></h2>
 <p>You can optionally specify some arguments in the <code>Arguments</code> field seperated by <code>;</code>. </p>
 <p>Here is a sample: <code>epochs=100;batch_size=24</code>. </p>
 <ul>
-<li>epochs : number of epochs to train your model for. By default, we will train for appropriate number of epochs depending upon the model.</li>
+<li>epochs : number of epochs to train your model for. By default, we will train for an appropriate number of epochs depending upon the model.</li>
 <li>batch_size : batch size for the training</li>
 <li>initial_learning_rate : initial learning rate for the model. We recommend you do not change this.</li>
-<li>num_clones (default=1): number of gpus to train model on </li>
+<li>num_clones (default=1): number of GPUs to train the model </li>
 </ul>
 <p>If you select a Machine type with 4 GPUs (Tesla V100), the following command can be used:
 <code>epochs=300000;num_clones=4;batch_24;</code></p>
@@ -1348,7 +1364,7 @@
 <li>Note that num_clones is 4 because there are 4 GPUs available.</li>
 </ul>
 <h2 id="adding-your-own-base-model-to-cvat">Adding your own base model to CVAT<a class="headerlink" href="#adding-your-own-base-model-to-cvat" title="Permanent link">&para;</a></h2>
-<p>You can also add your own base models to CVAT via Onepanel.  Please email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#112;&#97;&#110;&#101;&#108;&#46;&#105;&#111;">&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#112;&#97;&#110;&#101;&#108;&#46;&#105;&#111;</a> to learn how.</p>
+<p>You can also add your own base models to CVAT via Onepanel.  Please email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#112;&#97;&#110;&#101;&#108;&#46;&#105;&#111;">&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#112;&#97;&#110;&#101;&#108;&#46;&#105;&#111;</a> to learn how.</p>
 <h2 id="open-source-code">Open source code<a class="headerlink" href="#open-source-code" title="Permanent link">&para;</a></h2>
 <p>You can find the code that triggers dataset creation, base model pulling, model training, and model conversion here:</p>
 <p><a href="https://github.com/onepanelio/cvat-training">https://github.com/onepanelio/cvat-training</a></p>
