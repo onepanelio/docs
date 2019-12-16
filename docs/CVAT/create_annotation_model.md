@@ -4,10 +4,10 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 
 ## Training Model Through CVAT
 
-1 - Annotate enough images in your CVAT task.  
-2 - Go back to your CVAT dashboard and click on `Create New Annotation Model` in that task. You will see a popup with a few options.  
-3 - Select the appropriate model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).  
-4 - Select the machine type. A machine with multiple GPUs will speed up your training process.  
+1 - Annotate enough images in your CVAT task.  
+2 - Go back to your CVAT dashboard and click on `Create New Annotation Model` in that task. You will see a popup with a few options.  
+3 - Select the appropriate model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).  
+4 - Select the machine type. A machine with multiple GPUs will speed up your training process.  
 5 - Enter optional arguments. See below for more details.  
 
 ![CVAT flowchart](../assets/img/auto-annotation-v.2.0.png?raw=true)
