@@ -1,3 +1,7 @@
+<a href="https://youtu.be/omg9zucNFJw" target="_blank">
+![](../assets/vid/adding-repository.gif)
+</a>
+
 You can add and remove repositories to projects at any time. You can then add these repositories to Workspace or Jobs as you launch them.
 
 !!! note Note

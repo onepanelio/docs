@@ -1,3 +1,7 @@
+<a href="https://youtu.be/7CRmTYwaqC8" target="_blank">
+![](../assets/vid/delete-project.gif)
+</a>
+
 !!! warning "Warning"
     Deleted projects cannot be restored.
 
