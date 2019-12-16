@@ -76,3 +76,7 @@ body {
         color: #fff;
     }
 }
+
+.md-typeset a {
+    color: #01579B;
+}
