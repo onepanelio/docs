@@ -40,6 +40,8 @@ You can train any of the models that we support. Here, we provide a brief explan
 
 * If you are using `frcnn-nas-coco`, then please choose a machine with at least 2 GPUs as this model requires more memory. A machine with 1 GPU will throw an error.
 
+* Note that we don't support Yolo and MaskRCNN models yet.
+
 ## Adding your own base model to CVAT
 
 You can also add your own base models to CVAT via Onepanel.  Please email us at info@onepanel.io to learn how.
