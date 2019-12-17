@@ -56,6 +56,10 @@ nav:
   - Datasets:
     - Overview: datasets/index.md
     - Create a dataset: datasets/create.md
+    - Create dataset from AWS S3: datasets/create-aws.md
+    - Create dataset from Google Cloud: datasets/create-google.md
+    - Create dataset from Kaggle: datasets/create-kaggle.md
+    - Download data from Google Drive: datasets/downloading-data.md
     - Mount a dataset: datasets/mount.md
   - CLI:
     - Overview: cli/index.md
