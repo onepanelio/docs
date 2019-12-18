@@ -30,7 +30,7 @@ If you select a Machine type with 4 GPUs (Tesla V100), the following command can
 
 ## Choose a Model to Train
 
-You can train any of the models that we support. Here, we provide a brief explanation on how to choose one model over another based on your needs. Some models are faster than other, whereas some are more accurate than others. We hope this information will help you choose the right model for your task.
+You can train any of the models that we support. Here, we provide a brief explanation on how to choose one model over another based on your needs. Some models are faster than other, whereas some are more accurate than others. We hope this information will help you choose the right model for your task. 
 
 * SSD-based networks such as `ssd-mobilenet-v2` are faster than faster-rcnn based models. However, they are not as accurate as faster-rcnn based models. This model is generally recommended since its accurate and fast enough. If you don't know much about your data or the complexity of your data, then we recommend you go with this model.
 
@@ -41,6 +41,11 @@ You can train any of the models that we support. Here, we provide a brief explan
 * If you are using `frcnn-nas-coco`, then please choose a machine with at least 2 GPUs as this model requires more memory. A machine with 1 GPU will throw an error.
 
 * Note that we don't support Yolo and MaskRCNN models yet.
+
+#### Default Values for Models
+
+1. **ssd-mobilenet-v2-coco:**: batch_size: 24, learning_rate: 0.004, epochs=15000
+
 
 ## Using CVAT's TF_Annotations instead of OpenVino
 
