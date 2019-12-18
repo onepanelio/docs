@@ -1288,6 +1288,19 @@
     Choose a Model to Train
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-values-for-models" class="md-nav__link">
+    Default Values for Models
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1371,6 +1384,19 @@
     Choose a Model to Train
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-values-for-models" class="md-nav__link">
+    Default Values for Models
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1440,7 +1466,7 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 <li>Note that num_clones is 4 because there are 4 GPUs available.</li>
 </ul>
 <h2 id="choose-a-model-to-train">Choose a Model to Train<a class="headerlink" href="#choose-a-model-to-train" title="Permanent link">&para;</a></h2>
-<p>You can train any of the models that we support. Here, we provide a brief explanation on how to choose one model over another based on your needs. Some models are faster than other, whereas some are more accurate than others. We hope this information will help you choose the right model for your task.</p>
+<p>You can train any of the models that we support. Here, we provide a brief explanation on how to choose one model over another based on your needs. Some models are faster than other, whereas some are more accurate than others. We hope this information will help you choose the right model for your task. </p>
 <ul>
 <li>
 <p>SSD-based networks such as <code>ssd-mobilenet-v2</code> are faster than faster-rcnn based models. However, they are not as accurate as faster-rcnn based models. This model is generally recommended since its accurate and fast enough. If you don't know much about your data or the complexity of your data, then we recommend you go with this model.</p>
@@ -1458,6 +1484,10 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 <p>Note that we don't support Yolo and MaskRCNN models yet.</p>
 </li>
 </ul>
+<h4 id="default-values-for-models">Default Values for Models<a class="headerlink" href="#default-values-for-models" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>ssd-mobilenet-v2-coco:</strong>: batch_size: 24, learning_rate: 0.004, epochs=15000</li>
+</ol>
 <h2 id="using-cvats-tf_annotations-instead-of-openvino">Using CVAT's TF_Annotations instead of OpenVino<a class="headerlink" href="#using-cvats-tf_annotations-instead-of-openvino" title="Permanent link">&para;</a></h2>
 <p>We are still working on ensuring that OpenVino converted models provide enough accuracy within CVAT on Onepanel.  If OpenVino is not providing an accurate enough pre-annotation result you can use the TF_Annotations feature in CVAT.  </p>
 <p>Here are the steps:  </p>
