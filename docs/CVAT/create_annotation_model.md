@@ -34,6 +34,10 @@ You can train any of the models that we support. Here, we provide a brief explan
 
 * Note that we don't support Yolo and MaskRCNN models yet.
 
+* We currently support a few faster-rcnn models. All of these models are similar except that of the backbone used for the feature extraction. The backbones used are, in increasing order of complexity (i.e more layers), ResNet50, ResNet101, InceptionResNetV2. As the model complexity increases the computation requirement will also increase. If you have very complicated data (i.e hundreds of annotations in one image), then it is recommended that you choose complex model (i.e InceptionResNetV2).
+
+* Faster-rcnn models are generally more accurate than ssd models. However, sometimes you are better off using ssd models if your data is easy to learn (i.e 1 or 2 bounding box per image).
+
 ### ssd-mobilenet-v2-coco:
 
 SSD-based networks such as `ssd-mobilenet-v2` are faster than faster-rcnn based models. However, they are not as accurate as faster-rcnn based models. This model is generally recommended since its accurate and fast enough. If you don't know much about your data or the complexity of your data, then we recommend you go with this model.
@@ -68,9 +72,6 @@ Add detailed descritiption and images here
 
 ***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
 
-* Apart from this, we also support few faster-rcnn models. All of these models are almost similar except the backbone they use for the feature extraction. These backbones are, in increasing order of complexity (i.e more layers), ResNet50, ResNet101, InceptionResNetV2. As the model complexity increases the computation requirement also increases. If you have very complicated data (i.e hundreds of annotations in one image), then it is recommended that you choose complex model (i.e InceptionResNetV2).
-
-* Faster-rcnn models are generally expected to be more accurate than ssd ones. However, sometimes you are better off with ssd models if your data is easy to learn (i.e 1 or 2 bounding box per image).
 
 ### frcnn-nas-coco:
 
