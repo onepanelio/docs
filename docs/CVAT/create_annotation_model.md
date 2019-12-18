@@ -12,6 +12,8 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 
 ![CVAT flowchart](../assets/img/auto-annotation-v.2.0.png?raw=true)
 
+Live Demo: https://c.onepanel.io/onepanel-demo/projects/cvat-public-demo/overview
+
 ## Arguments (optional)
 
 You can optionally specify some arguments in the `Arguments` field seperated by `;`. 
