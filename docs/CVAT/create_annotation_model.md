@@ -32,24 +32,53 @@ If you select a Machine type with 4 GPUs (Tesla V100), the following command can
 
 You can train any of the models that we support. Here, we provide a brief explanation on how to choose one model over another based on your needs. Some models are faster than other, whereas some are more accurate than others. We hope this information will help you choose the right model for your task. 
 
-* SSD-based networks such as `ssd-mobilenet-v2` are faster than faster-rcnn based models. However, they are not as accurate as faster-rcnn based models. This model is generally recommended since its accurate and fast enough. If you don't know much about your data or the complexity of your data, then we recommend you go with this model.
+* Note that we don't support Yolo and MaskRCNN models yet.
+
+### ssd-mobilenet-v2-coco:
+
+SSD-based networks such as `ssd-mobilenet-v2` are faster than faster-rcnn based models. However, they are not as accurate as faster-rcnn based models. This model is generally recommended since its accurate and fast enough. If you don't know much about your data or the complexity of your data, then we recommend you go with this model.
+
+***Defaults: batch_size: 24, learning_rate: 0.004, epochs=15000
+
+
+### frcnn-res50-coco
+
+Add detailed descritiption and images here
+
+***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000
+
+
+### rcnn-res50-lowp
+
+Add detailed descritiption and images here
+
+***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000
+
+
+### frcnn-res101-coco: 
+
+Add detailed descritiption and images here
+
+***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000
+
+
+### frcnn-inc-resv2-atr-coco: 
+
+Add detailed descritiption and images here
+
+***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000
 
 * Apart from this, we also support few faster-rcnn models. All of these models are almost similar except the backbone they use for the feature extraction. These backbones are, in increasing order of complexity (i.e more layers), ResNet50, ResNet101, InceptionResNetV2. As the model complexity increases the computation requirement also increases. If you have very complicated data (i.e hundreds of annotations in one image), then it is recommended that you choose complex model (i.e InceptionResNetV2).
 
 * Faster-rcnn models are generally expected to be more accurate than ssd ones. However, sometimes you are better off with ssd models if your data is easy to learn (i.e 1 or 2 bounding box per image).
 
+### frcnn-nas-coco:
+
 * If you are using `frcnn-nas-coco`, then please choose a machine with at least 2 GPUs as this model requires more memory. A machine with 1 GPU will throw an error.
 
-* Note that we don't support Yolo and MaskRCNN models yet.
+***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000
 
-#### Default Values for Models
 
-1. **ssd-mobilenet-v2-coco:**: batch_size: 24, learning_rate: 0.004, epochs=15000
-2. **frcnn-res50-coco**: batch_size: 1, learning_rate: 0.0003, epochs=10000
-3. **frcnn-res50-lowp**: batch_size: 1, learning_rate: 0.0003, epochs=10000
-4. **frcnn-res101-coco**: batch_size: 1, learning_rate: 0.0003, epochs=10000
-5. **frcnn-nas-coco**: batch_size: 1, learning_rate: 0.0003, epochs=10000
-6. **frcnn-inc-resv2-atr-coco**: batch_size: 1, learning_rate: 0.0003, epochs=10000
 
 
 ## Using CVAT's TF_Annotations instead of OpenVino
