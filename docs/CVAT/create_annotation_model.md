@@ -42,7 +42,7 @@ You can train any of the models that we support. Here, we provide a brief explan
 
 * Note that we don't support Yolo and MaskRCNN models yet.
 
-## Using CVAT's TF_Annotations instead OpenVino
+## Using CVAT's TF_Annotations instead of OpenVino
 
 We are still working on ensuring that OpenVino converted models provide enough accuracy within CVAT on Onepanel.  If OpenVino is not providing an accurate enough pre-annotation result you can use the TF_Annotations feature in CVAT.  
 
