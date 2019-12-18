@@ -38,52 +38,6 @@ You can use any of the models that we support to train your custom pre-annotatio
 
 * Faster-rcnn models are generally more accurate than ssd models. However, sometimes you are better off using ssd models if your data is easy to learn (i.e 1 or 2 bounding box per image).
 
-### ssd-mobilenet-v2-coco:
-
-SSD-based networks such as `ssd-mobilenet-v2` are faster than faster-rcnn based models. However, they are not as accurate as faster-rcnn based models. This model is generally recommended since its accurate and fast enough. If you don't know much about your data or the complexity of your data, then we recommend you go with this model.
-
-You will find the pre-trained model and config file for ssd-mobilenetv2 model trained on COCO dataset.
-
-This model is a good place to start if you don't have any specific model in mind. If you are data is very complicated (i.e many annotations per image) then you should prefer faster-rcnn models over ssd.
-
-Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 24)) * 1000. For instance, if you have 100 images, then your epochs will be 4000 (rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.
-
-***Defaults***: batch_size: 24, learning_rate: 0.004, epochs=15000
-
-***Model***: https://c.onepanel.io/onepanel-demo/datasets/ssd-mobilenet-v2-coco/details
-
-
-### frcnn-res50-coco
-
-You will find the pre-trained model and a config file for faster-rcnn-resnet50 model. This is a type of faster-rcnn model with ResNet50 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). If you are looking for more complex and accurate model then check out frcnn-res101-coco or frcnn-inc-resv2-atr-coco.
-
-Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 1)) * 500. For instance, if you have 100 images, then your epochs will be 50000(rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.
-
-Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.
-
-***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
-
-***Model***: https://c.onepanel.io/onepanel-demo/datasets/frcnn-res50-lowp/details
-
-
-### rcnn-res50-lowp
-
-Add detailed descritiption and images here
-
-***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
-
-***Model***: https://c.onepanel.io/onepanel-demo/datasets/frcnn-res50-coco/details
-
-
-### frcnn-res101-coco: 
-
-Add detailed descritiption and images here
-
-***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
-
-***Model***: https://c.onepanel.io/onepanel-demo/datasets/frcnn-res101-coco/details
-
-
 ### frcnn-inc-resv2-atr-coco: 
 
 You will find the pre-trained model and a config file for faster-rcnn-inception-resnetv2 model. This is a type of faster-rcnn model with InceptionResNetV2 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2).
@@ -110,6 +64,55 @@ Please note that current implementation of faster-rcnn inTensorFlow Object Detec
 ***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
 
 ***Model***: https://c.onepanel.io/onepanel-demo/datasets/frcnn-nas-coco/details
+
+
+### frcnn-res101-coco: 
+
+Add detailed descritiption and images here
+
+***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
+
+***Model***: https://c.onepanel.io/onepanel-demo/datasets/frcnn-res101-coco/details
+
+
+### frcnn-res50-coco
+
+You will find the pre-trained model and a config file for faster-rcnn-resnet50 model. This is a type of faster-rcnn model with ResNet50 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). If you are looking for more complex and accurate model then check out frcnn-res101-coco or frcnn-inc-resv2-atr-coco.
+
+Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 1)) * 500. For instance, if you have 100 images, then your epochs will be 50000(rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.
+
+Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.
+
+***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
+
+***Model***: https://c.onepanel.io/onepanel-demo/datasets/frcnn-res50-lowp/details
+
+
+### rcnn-res50-lowp
+
+Add detailed descritiption and images here
+
+***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
+
+***Model***: https://c.onepanel.io/onepanel-demo/datasets/frcnn-res50-coco/details
+
+
+
+### ssd-mobilenet-v2-coco:
+
+SSD-based networks such as `ssd-mobilenet-v2` are faster than faster-rcnn based models. However, they are not as accurate as faster-rcnn based models. This model is generally recommended since its accurate and fast enough. If you don't know much about your data or the complexity of your data, then we recommend you go with this model.
+
+You will find the pre-trained model and config file for ssd-mobilenetv2 model trained on COCO dataset.
+
+This model is a good place to start if you don't have any specific model in mind. If you are data is very complicated (i.e many annotations per image) then you should prefer faster-rcnn models over ssd.
+
+Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 24)) * 1000. For instance, if you have 100 images, then your epochs will be 4000 (rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.
+
+***Defaults***: batch_size: 24, learning_rate: 0.004, epochs=15000
+
+***Model***: https://c.onepanel.io/onepanel-demo/datasets/ssd-mobilenet-v2-coco/details
+
+
 
 
 ## Using CVAT's TF_Annotations instead of OpenVino
