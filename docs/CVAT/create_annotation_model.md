@@ -14,9 +14,9 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 
 ## Arguments (optional)
 
-You can optionally specify some arguments in the `Arguments` field seperated by `,`. 
+You can optionally specify some arguments in the `Arguments` field seperated by `;`. 
 
-Here is a sample: `epochs=100,batch_size=24`. 
+Here is a sample: `epochs=100;batch_size=24`. 
 
 - epochs : number of epochs to train your model for. By default, we will train for an appropriate number of epochs depending upon the model.
 - batch_size : batch size for the training
@@ -24,7 +24,7 @@ Here is a sample: `epochs=100,batch_size=24`.
 - num_clones (default=1): number of GPUs to train the model 
 
 If you select a Machine type with 4 GPUs (Tesla V100), the following command can be used:
-`epochs=300000,num_clones=4`
+`epochs=300000;num_clones=4`
 
 - Note that num_clones is 4 because there are 4 GPUs available.
 
