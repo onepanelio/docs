@@ -1542,19 +1542,19 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 </ul>
 <h3 id="ssd-mobilenet-v2-coco">ssd-mobilenet-v2-coco:<a class="headerlink" href="#ssd-mobilenet-v2-coco" title="Permanent link">&para;</a></h3>
 <p>SSD-based networks such as <code>ssd-mobilenet-v2</code> are faster than faster-rcnn based models. However, they are not as accurate as faster-rcnn based models. This model is generally recommended since its accurate and fast enough. If you don't know much about your data or the complexity of your data, then we recommend you go with this model.</p>
-<p>***Defaults: batch_size: 24, learning_rate: 0.004, epochs=15000</p>
+<p><strong><em>Defaults</em></strong>: batch_size: 24, learning_rate: 0.004, epochs=15000</p>
 <h3 id="frcnn-res50-coco">frcnn-res50-coco<a class="headerlink" href="#frcnn-res50-coco" title="Permanent link">&para;</a></h3>
 <p>Add detailed descritiption and images here</p>
-<p>***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
+<p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
 <h3 id="rcnn-res50-lowp">rcnn-res50-lowp<a class="headerlink" href="#rcnn-res50-lowp" title="Permanent link">&para;</a></h3>
 <p>Add detailed descritiption and images here</p>
-<p>***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
+<p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
 <h3 id="frcnn-res101-coco">frcnn-res101-coco:<a class="headerlink" href="#frcnn-res101-coco" title="Permanent link">&para;</a></h3>
 <p>Add detailed descritiption and images here</p>
-<p>***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
+<p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
 <h3 id="frcnn-inc-resv2-atr-coco">frcnn-inc-resv2-atr-coco:<a class="headerlink" href="#frcnn-inc-resv2-atr-coco" title="Permanent link">&para;</a></h3>
 <p>Add detailed descritiption and images here</p>
-<p>***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
+<p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
 <ul>
 <li>
 <p>Apart from this, we also support few faster-rcnn models. All of these models are almost similar except the backbone they use for the feature extraction. These backbones are, in increasing order of complexity (i.e more layers), ResNet50, ResNet101, InceptionResNetV2. As the model complexity increases the computation requirement also increases. If you have very complicated data (i.e hundreds of annotations in one image), then it is recommended that you choose complex model (i.e InceptionResNetV2).</p>
@@ -1567,7 +1567,7 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 <ul>
 <li>If you are using <code>frcnn-nas-coco</code>, then please choose a machine with at least 2 GPUs as this model requires more memory. A machine with 1 GPU will throw an error.</li>
 </ul>
-<p>***Defaults: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
+<p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
 <h2 id="using-cvats-tf_annotations-instead-of-openvino">Using CVAT's TF_Annotations instead of OpenVino<a class="headerlink" href="#using-cvats-tf_annotations-instead-of-openvino" title="Permanent link">&para;</a></h2>
 <p>We are still working on ensuring that OpenVino converted models provide enough accuracy within CVAT on Onepanel.  If OpenVino is not providing an accurate enough pre-annotation result you can use the TF_Annotations feature in CVAT.  </p>
 <p>Here are the steps:  </p>
