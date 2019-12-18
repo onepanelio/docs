@@ -45,6 +45,11 @@ You can train any of the models that we support. Here, we provide a brief explan
 #### Default Values for Models
 
 1. **ssd-mobilenet-v2-coco:**: batch_size: 24, learning_rate: 0.004, epochs=15000
+2. **frcnn-res50-coco**: batch_size: 1, learning_rate: 0.0003, epochs=10000
+3. **frcnn-res50-lowp**: batch_size: 1, learning_rate: 0.0003, epochs=10000
+4. **frcnn-res101-coco**: batch_size: 1, learning_rate: 0.0003, epochs=10000
+5. **frcnn-nas-coco**: batch_size: 1, learning_rate: 0.0003, epochs=10000
+6. **frcnn-inc-resv2-atr-coco**: batch_size: 1, learning_rate: 0.0003, epochs=10000
 
 
 ## Using CVAT's TF_Annotations instead of OpenVino
