@@ -1243,6 +1243,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#using-cvats-tf_annotations-instead-openvino" class="md-nav__link">
+    Using CVAT's TF_Annotations instead OpenVino
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#adding-your-own-base-model-to-cvat" class="md-nav__link">
     Adding your own base model to CVAT
   </a>
@@ -1314,6 +1321,13 @@
         <li class="md-nav__item">
   <a href="#choose-a-model-to-train" class="md-nav__link">
     Choose a Model to Train
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-cvats-tf_annotations-instead-openvino" class="md-nav__link">
+    Using CVAT's TF_Annotations instead OpenVino
   </a>
   
 </li>
@@ -1396,6 +1410,16 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 <p>Note that we don't support Yolo and MaskRCNN models yet.</p>
 </li>
 </ul>
+<h2 id="using-cvats-tf_annotations-instead-openvino">Using CVAT's TF_Annotations instead OpenVino<a class="headerlink" href="#using-cvats-tf_annotations-instead-openvino" title="Permanent link">&para;</a></h2>
+<p>We are still working on ensuring that OpenVino converted models provide enough accuracy within CVAT on Onepanel.  If OpenVino is not providing an accurate enough pre-annotation result you can use the TF_Annotations feature in CVAT.  </p>
+<p>Here are the steps:  </p>
+<p>1.) Once you receive the email notification that your model is complete, click on the URL <br />
+2.) Mount the dataset into CVAT<br />
+3.) Switch to Jupyter Notebook and delete (backup if needed) all files inside of the following folder:  </p>
+<p>../input/models/cvat-default/  </p>
+<p>4.) Copy all of the files from the tf_annotations folder of your dataset you just mounted to CVAT<br />
+5.) Upgrade your workspace to a GPU (The more GPUs you use the faster the pre-annotation process will complete)  <br />
+6.) Press the TF_Annotation button for the task you want to pre-annotate  </p>
 <h2 id="adding-your-own-base-model-to-cvat">Adding your own base model to CVAT<a class="headerlink" href="#adding-your-own-base-model-to-cvat" title="Permanent link">&para;</a></h2>
 <p>You can also add your own base models to CVAT via Onepanel.  Please email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#112;&#97;&#110;&#101;&#108;&#46;&#105;&#111;">&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#112;&#97;&#110;&#101;&#108;&#46;&#105;&#111;</a> to learn how.</p>
 <h2 id="open-source-code">Open source code<a class="headerlink" href="#open-source-code" title="Permanent link">&para;</a></h2>
