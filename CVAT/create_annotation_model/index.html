@@ -1487,6 +1487,11 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 <h4 id="default-values-for-models">Default Values for Models<a class="headerlink" href="#default-values-for-models" title="Permanent link">&para;</a></h4>
 <ol>
 <li><strong>ssd-mobilenet-v2-coco:</strong>: batch_size: 24, learning_rate: 0.004, epochs=15000</li>
+<li><strong>frcnn-res50-coco</strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</li>
+<li><strong>frcnn-res50-lowp</strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</li>
+<li><strong>frcnn-res101-coco</strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</li>
+<li><strong>frcnn-nas-coco</strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</li>
+<li><strong>frcnn-inc-resv2-atr-coco</strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</li>
 </ol>
 <h2 id="using-cvats-tf_annotations-instead-of-openvino">Using CVAT's TF_Annotations instead of OpenVino<a class="headerlink" href="#using-cvats-tf_annotations-instead-of-openvino" title="Permanent link">&para;</a></h2>
 <p>We are still working on ensuring that OpenVino converted models provide enough accuracy within CVAT on Onepanel.  If OpenVino is not providing an accurate enough pre-annotation result you can use the TF_Annotations feature in CVAT.  </p>
