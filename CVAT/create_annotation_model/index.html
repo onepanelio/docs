@@ -1538,7 +1538,15 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 <h2 id="choose-a-model-to-train">Choose a Model to Train<a class="headerlink" href="#choose-a-model-to-train" title="Permanent link">&para;</a></h2>
 <p>You can train any of the models that we support. Here, we provide a brief explanation on how to choose one model over another based on your needs. Some models are faster than other, whereas some are more accurate than others. We hope this information will help you choose the right model for your task. </p>
 <ul>
-<li>Note that we don't support Yolo and MaskRCNN models yet.</li>
+<li>
+<p>Note that we don't support Yolo and MaskRCNN models yet.</p>
+</li>
+<li>
+<p>We currently support a few faster-rcnn models. All of these models are similar except that of the backbone used for the feature extraction. The backbones used are, in increasing order of complexity (i.e more layers), ResNet50, ResNet101, InceptionResNetV2. As the model complexity increases the computation requirement will also increase. If you have very complicated data (i.e hundreds of annotations in one image), then it is recommended that you choose complex model (i.e InceptionResNetV2).</p>
+</li>
+<li>
+<p>Faster-rcnn models are generally more accurate than ssd models. However, sometimes you are better off using ssd models if your data is easy to learn (i.e 1 or 2 bounding box per image).</p>
+</li>
 </ul>
 <h3 id="ssd-mobilenet-v2-coco">ssd-mobilenet-v2-coco:<a class="headerlink" href="#ssd-mobilenet-v2-coco" title="Permanent link">&para;</a></h3>
 <p>SSD-based networks such as <code>ssd-mobilenet-v2</code> are faster than faster-rcnn based models. However, they are not as accurate as faster-rcnn based models. This model is generally recommended since its accurate and fast enough. If you don't know much about your data or the complexity of your data, then we recommend you go with this model.</p>
@@ -1555,14 +1563,6 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 <h3 id="frcnn-inc-resv2-atr-coco">frcnn-inc-resv2-atr-coco:<a class="headerlink" href="#frcnn-inc-resv2-atr-coco" title="Permanent link">&para;</a></h3>
 <p>Add detailed descritiption and images here</p>
 <p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
-<ul>
-<li>
-<p>Apart from this, we also support few faster-rcnn models. All of these models are almost similar except the backbone they use for the feature extraction. These backbones are, in increasing order of complexity (i.e more layers), ResNet50, ResNet101, InceptionResNetV2. As the model complexity increases the computation requirement also increases. If you have very complicated data (i.e hundreds of annotations in one image), then it is recommended that you choose complex model (i.e InceptionResNetV2).</p>
-</li>
-<li>
-<p>Faster-rcnn models are generally expected to be more accurate than ssd ones. However, sometimes you are better off with ssd models if your data is easy to learn (i.e 1 or 2 bounding box per image).</p>
-</li>
-</ul>
 <h3 id="frcnn-nas-coco">frcnn-nas-coco:<a class="headerlink" href="#frcnn-nas-coco" title="Permanent link">&para;</a></h3>
 <ul>
 <li>If you are using <code>frcnn-nas-coco</code>, then please choose a machine with at least 2 GPUs as this model requires more memory. A machine with 1 GPU will throw an error.</li>
