@@ -28,7 +28,7 @@ If you select a Machine type with 4 GPUs (Tesla V100), the following command can
 
 - Note that num_clones is 4 because there are 4 GPUs available.
 
-## Choosing the best base model
+## Choosing the right base model
 
 You can use any of the models that we support to train your custom pre-annotation models. Here, we provide a brief explanation on how to choose one model over another based on your needs. Some models are faster than others, whereas some are more accurate than others.  We hope this information will help you choose the right model for your task. 
 
