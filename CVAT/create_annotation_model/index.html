@@ -1522,8 +1522,8 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 5 - Enter optional arguments. See below for more details.  </p>
 <p><img alt="CVAT flowchart" src="../../assets/img/auto-annotation-v.2.0.png?raw=true" /></p>
 <h2 id="arguments-optional">Arguments (optional)<a class="headerlink" href="#arguments-optional" title="Permanent link">&para;</a></h2>
-<p>You can optionally specify some arguments in the <code>Arguments</code> field seperated by <code>,</code>. </p>
-<p>Here is a sample: <code>epochs=100,batch_size=24</code>. </p>
+<p>You can optionally specify some arguments in the <code>Arguments</code> field seperated by <code>;</code>. </p>
+<p>Here is a sample: <code>epochs=100;batch_size=24</code>. </p>
 <ul>
 <li>epochs : number of epochs to train your model for. By default, we will train for an appropriate number of epochs depending upon the model.</li>
 <li>batch_size : batch size for the training</li>
@@ -1531,7 +1531,7 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 <li>num_clones (default=1): number of GPUs to train the model </li>
 </ul>
 <p>If you select a Machine type with 4 GPUs (Tesla V100), the following command can be used:
-<code>epochs=300000,num_clones=4</code></p>
+<code>epochs=300000;num_clones=4</code></p>
 <ul>
 <li>Note that num_clones is 4 because there are 4 GPUs available.</li>
 </ul>
