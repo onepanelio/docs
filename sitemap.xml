@@ -141,6 +141,26 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://docs.onepanel.io/datasets/create-aws/</loc>
+     <lastmod>2019-12-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.onepanel.io/datasets/create-google/</loc>
+     <lastmod>2019-12-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.onepanel.io/datasets/create-kaggle/</loc>
+     <lastmod>2019-12-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.onepanel.io/datasets/downloading-data/</loc>
+     <lastmod>2019-12-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc></loc>
      
      <changefreq>daily</changefreq>
