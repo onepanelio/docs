@@ -42,7 +42,7 @@ You can use any of the models that we support to train your custom pre-annotatio
 
 ### frcnn-inc-resv2-atr-coco: 
 
-You will find the pre-trained model and a config file for faster-rcnn-inception-resnetv2 model. This is a type of faster-rcnn model with InceptionResNetV2 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2).
+This is a type of faster-rcnn model with InceptionResNetV2 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2).
 
 Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 1)) * 500. For instance, if you have 100 images, then your epochs will be 50000(rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.
 
@@ -57,9 +57,9 @@ Please note that current implementation of faster-rcnn inTensorFlow Object Detec
 
 * If you are using `frcnn-nas-coco`, then please choose a machine with at least 2 GPUs as this model requires more memory. A machine with 1 GPU will throw an error.
 
-You will find the pre-trained model and a config file for faster-rcnn-nas model. This is a type of faster-rcnn model with NAS backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2).
+This is a type of faster-rcnn model with NAS backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2).
 
-Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 1)) * 500. For instance, if you have 100 images, then your epochs will be 50000(rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.
+For how to set epochs, you can take a look at first model since both models are faster-rcnn based.
 
 Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.
 
@@ -70,7 +70,12 @@ Please note that current implementation of faster-rcnn inTensorFlow Object Detec
 
 ### frcnn-res101-coco: 
 
-Add detailed descritiption and images here
+This is a type of faster-rcnn model with ResNet101 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). 
+
+For how to set epochs, you can take a look at first model since both models are faster-rcnn based.
+
+Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.
+
 
 ***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
 
@@ -79,9 +84,9 @@ Add detailed descritiption and images here
 
 ### frcnn-res50-coco
 
-You will find the pre-trained model and a config file for faster-rcnn-resnet50 model. This is a type of faster-rcnn model with ResNet50 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). If you are looking for more complex and accurate model then check out frcnn-res101-coco or frcnn-inc-resv2-atr-coco.
+ This is a type of faster-rcnn model with ResNet50 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). If you are looking for more complex and accurate model then check out frcnn-res101-coco or frcnn-inc-resv2-atr-coco.
 
-Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 1)) * 500. For instance, if you have 100 images, then your epochs will be 50000(rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.
+For how to set epochs, you can take a look at first model since both models are faster-rcnn based.
 
 Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.
 
@@ -90,9 +95,13 @@ Please note that current implementation of faster-rcnn inTensorFlow Object Detec
 ***Model***: https://c.onepanel.io/onepanel-demo/datasets/frcnn-res50-lowp/details
 
 
-### rcnn-res50-lowp
+### frcnn-res50-lowp
 
-Add detailed descritiption and images here
+This is a type of faster-rcnn model with ResNet50 backbone with low number of proposals. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). If you are looking for more complex and accurate model then check out frcnn-res101-coco or frcnn-inc-resv2-atr-coco.
+
+For how to set epochs, you can take a look at first model since both models are faster-rcnn based.
+
+Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.
 
 ***Defaults***: batch_size: 1, learning_rate: 0.0003, epochs=10000
 
