@@ -2,162 +2,162 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://docs.onepanel.io/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/terms-of-service/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/privacy-policy/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/release-notes/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/start/core-concepts/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/start/cli/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/start/sdk/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/start/computer-vision/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/projects/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/projects/create/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/projects/forking/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/projects/members/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/projects/repositories/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/projects/local-repository/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/projects/delete/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/workspaces/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/workspaces/create/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/workspaces/interactions/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/workspaces/machine-types/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/workspaces/pause-resume/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/workspaces/delete/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/jobs/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/jobs/create/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/jobs/tensorboard/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/jobs/save-output/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/jobs/download-output/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/datasets/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/datasets/create/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/datasets/create-aws/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/datasets/create-google/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/datasets/create-kaggle/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/datasets/downloading-data/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -167,82 +167,82 @@
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/login/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/logout/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/projects-init/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/projects-create/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/projects-clone/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/datasets-init/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/datasets-create/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/datasets-clone/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/jobs/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/download/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/environments-list/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/machine-types-list/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/cli/volume-types-list/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/sdk/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/integrations/access-tokens/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -257,37 +257,37 @@
     </url>
     <url>
      <loc>https://docs.onepanel.io/environments/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/environments/custom-packages/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/machine-types/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/machine-types/spot/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/volume-types/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/accounts/delete/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.onepanel.io/CVAT/create_annotation_model/</loc>
-     <lastmod>2019-12-18</lastmod>
+     <lastmod>2019-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

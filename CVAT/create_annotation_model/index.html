@@ -1320,8 +1320,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rcnn-res50-lowp" class="md-nav__link">
-    rcnn-res50-lowp
+  <a href="#frcnn-res50-lowp" class="md-nav__link">
+    frcnn-res50-lowp
   </a>
   
 </li>
@@ -1451,8 +1451,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rcnn-res50-lowp" class="md-nav__link">
-    rcnn-res50-lowp
+  <a href="#frcnn-res50-lowp" class="md-nav__link">
+    frcnn-res50-lowp
   </a>
   
 </li>
@@ -1550,7 +1550,7 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 </li>
 </ul>
 <h3 id="frcnn-inc-resv2-atr-coco">frcnn-inc-resv2-atr-coco:<a class="headerlink" href="#frcnn-inc-resv2-atr-coco" title="Permanent link">&para;</a></h3>
-<p>You will find the pre-trained model and a config file for faster-rcnn-inception-resnetv2 model. This is a type of faster-rcnn model with InceptionResNetV2 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2).</p>
+<p>This is a type of faster-rcnn model with InceptionResNetV2 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2).</p>
 <p>Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 1)) * 500. For instance, if you have 100 images, then your epochs will be 50000(rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.</p>
 <p>Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.</p>
 <p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
@@ -1559,23 +1559,27 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 <ul>
 <li>If you are using <code>frcnn-nas-coco</code>, then please choose a machine with at least 2 GPUs as this model requires more memory. A machine with 1 GPU will throw an error.</li>
 </ul>
-<p>You will find the pre-trained model and a config file for faster-rcnn-nas model. This is a type of faster-rcnn model with NAS backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2).</p>
-<p>Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 1)) * 500. For instance, if you have 100 images, then your epochs will be 50000(rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.</p>
+<p>This is a type of faster-rcnn model with NAS backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2).</p>
+<p>For how to set epochs, you can take a look at first model since both models are faster-rcnn based.</p>
 <p>Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.</p>
 <p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
 <p><strong><em>Model</em></strong>: <a href="https://c.onepanel.io/onepanel-demo/datasets/frcnn-nas-coco/details">https://c.onepanel.io/onepanel-demo/datasets/frcnn-nas-coco/details</a></p>
 <h3 id="frcnn-res101-coco">frcnn-res101-coco:<a class="headerlink" href="#frcnn-res101-coco" title="Permanent link">&para;</a></h3>
-<p>Add detailed descritiption and images here</p>
+<p>This is a type of faster-rcnn model with ResNet101 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). </p>
+<p>For how to set epochs, you can take a look at first model since both models are faster-rcnn based.</p>
+<p>Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.</p>
 <p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
 <p><strong><em>Model</em></strong>: <a href="https://c.onepanel.io/onepanel-demo/datasets/frcnn-res101-coco/details">https://c.onepanel.io/onepanel-demo/datasets/frcnn-res101-coco/details</a></p>
 <h3 id="frcnn-res50-coco">frcnn-res50-coco<a class="headerlink" href="#frcnn-res50-coco" title="Permanent link">&para;</a></h3>
-<p>You will find the pre-trained model and a config file for faster-rcnn-resnet50 model. This is a type of faster-rcnn model with ResNet50 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). If you are looking for more complex and accurate model then check out frcnn-res101-coco or frcnn-inc-resv2-atr-coco.</p>
-<p>Depending upon your data, you can set epochs to train your model. There is no standard value which can work for all datasets. You generally have to try different number of epochs to get the best model. Ideally, you do so by monitoring loss of your model while training. But if you are looking for a recommendation. Then, we recommend you set epochs as follows: (number of images / batch_size (default: 1)) * 500. For instance, if you have 100 images, then your epochs will be 50000(rounded). Please note that the model will be trained using a pre-trained model, so you don't need to train as long as you would have to when not using the pre-trained model.</p>
+<p>This is a type of faster-rcnn model with ResNet50 backbone. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). If you are looking for more complex and accurate model then check out frcnn-res101-coco or frcnn-inc-resv2-atr-coco.</p>
+<p>For how to set epochs, you can take a look at first model since both models are faster-rcnn based.</p>
 <p>Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.</p>
 <p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
 <p><strong><em>Model</em></strong>: <a href="https://c.onepanel.io/onepanel-demo/datasets/frcnn-res50-lowp/details">https://c.onepanel.io/onepanel-demo/datasets/frcnn-res50-lowp/details</a></p>
-<h3 id="rcnn-res50-lowp">rcnn-res50-lowp<a class="headerlink" href="#rcnn-res50-lowp" title="Permanent link">&para;</a></h3>
-<p>Add detailed descritiption and images here</p>
+<h3 id="frcnn-res50-lowp">frcnn-res50-lowp<a class="headerlink" href="#frcnn-res50-lowp" title="Permanent link">&para;</a></h3>
+<p>This is a type of faster-rcnn model with ResNet50 backbone with low number of proposals. If you are not sure about which model to use then we recommend you use SSD based model (i.e ssd-mobilenet-v2). If you are looking for more complex and accurate model then check out frcnn-res101-coco or frcnn-inc-resv2-atr-coco.</p>
+<p>For how to set epochs, you can take a look at first model since both models are faster-rcnn based.</p>
+<p>Please note that current implementation of faster-rcnn inTensorFlow Object Detection API does not support batch training. That is, you shouldn't change batch_size.</p>
 <p><strong><em>Defaults</em></strong>: batch_size: 1, learning_rate: 0.0003, epochs=10000</p>
 <p><strong><em>Model</em></strong>: <a href="https://c.onepanel.io/onepanel-demo/datasets/frcnn-res50-coco/details">https://c.onepanel.io/onepanel-demo/datasets/frcnn-res50-coco/details</a></p>
 <h3 id="ssd-mobilenet-v2-coco">ssd-mobilenet-v2-coco:<a class="headerlink" href="#ssd-mobilenet-v2-coco" title="Permanent link">&para;</a></h3>
