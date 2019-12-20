@@ -1,3 +1,7 @@
+<a href="https://youtu.be/gdI_s9jFCAY" target="_blank">
+![](../assets/vid/delete-workspace.gif)
+</a>
+
 You can delete a running or paused Workspace at any time. 
 
 !!! warning "Warning"

@@ -1,3 +1,7 @@
+<a href="https://youtu.be/dsDCuFm1N94" target="_blank">
+![](../assets/vid/switch-machine-type.gif)
+</a>
+
 !!! note "Note"
     Switching machine types will restart your Workspace.
 

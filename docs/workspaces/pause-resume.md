@@ -1,3 +1,7 @@
+<a href="https://youtu.be/aUasN2g-jY4" target="_blank">
+![](../assets/vid/pause-resume-workspace.gif)
+</a>
+
 You can pause Workspaces at any time to save on compute costs. All your work remains in the Workspace for you to access at a later time when you resume your Workspace.
 
 !!! important "Important"
