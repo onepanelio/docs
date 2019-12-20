@@ -3,6 +3,7 @@ site_url: https://docs.onepanel.io
 site_author: Onepanel, Inc.
 site_description: Extensible machine learning and deep learning platform on GPUs
 repo_url: https://github.com/onepanelio/docs
+google_analytics: ['UA-106005416-4', 'docs.onepanel.io']
 theme:
   name: 'material'
   logo: assets/img/onepanel-logo-white.svg
@@ -26,6 +27,8 @@ extra:
       link: 'https://facebook.com/onepanelio'
 nav:
   - About Onepanel: index.md
+  - Terms of Service: terms-of-service/index.md
+  - Privacy Policy: privacy-policy/index.md
   - Release notes: release-notes/index.md
   - Get Started:
     - Core concepts: start/core-concepts.md
@@ -92,6 +95,8 @@ nav:
     - List of volume types: volume-types/index.md
   - Accounts:
     - Account Deletion: accounts/delete.md
+  - CVAT:
+    - Create Annotation Model: CVAT/create_annotation_model.md
 markdown_extensions:
     - admonition
     - codehilite

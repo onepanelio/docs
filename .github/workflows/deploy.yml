@@ -1,0 +1,31 @@
+name: Deploy
+
+on:
+  push:
+    branches: 
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: setup python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.6.9'
+        architecture: 'x64'
+    - name: install mkdocs
+      run: pip install wheel mkdocs mkdocs-material
+    - name: build mkdocs
+      run: mkdocs build
+    - name: deploy to github pages
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BASE_BRANCH: master
+        BRANCH: gh-pages
+        FOLDER: site    
+    
