@@ -1,4 +1,4 @@
-<a href="https://youtu.be/gdI_s9jFCAY" target="_blank">
+<a href="https://youtu.be/TMjgeptAx1k" target="_blank">
 ![](../assets/vid/delete-workspace.gif)
 </a>
 
