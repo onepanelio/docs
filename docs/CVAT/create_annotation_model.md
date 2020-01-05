@@ -9,6 +9,9 @@ Once you have annotated enough data, you can train a model to pre-annotate the r
 3 - Select the appropriate model type (TensorFlow OD API recommended) and then select the model (i.e ssd-mobilenet-v2-coco-201).  
 4 - Select the machine type. A machine with multiple GPUs will speed up your training process.  
 5 - Enter optional arguments. See below for more details.  
+6 - Click on link to new model in email once model training if complete - locate the tf_annoation_model folder
+7 - Mount this new dataset to the CVAT workspace and Open Model manager select files in tf_annotation_model folder
+8 - Click TF_Annotion button for the current task
 
 ![CVAT flowchart](../assets/img/auto-annotation-v.2.0.png?raw=true)
 
