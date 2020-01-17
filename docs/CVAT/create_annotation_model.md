@@ -126,25 +126,6 @@ Depending upon your data, you can set epochs to train your model. There is no st
 
 ***Model***: https://c.onepanel.io/onepanel-demo/datasets/ssd-mobilenet-v2-coco/details
 
-
-
-
-## Using CVAT's TF_Annotations instead of OpenVino
-
-We are still working on ensuring that OpenVino converted models provide enough accuracy within CVAT on Onepanel.  If OpenVino is not providing an accurate enough pre-annotation result you can use the TF_Annotations feature in CVAT.  
-
-Here are the steps:  
-
-1.) Once you receive the email notification that your model is complete, click on the URL   
-2.) Mount the dataset into CVAT  
-3.) Switch to Jupyter Notebook and delete (backup if needed) all files inside of the following folder:  
-
-../input/models/cvat-default/  
-
-4.) Copy all of the files from the tf_annotations folder of your dataset you just mounted to CVAT  
-5.) Upgrade your workspace to a GPU (The more GPUs you use the faster the pre-annotation process will complete)    
-6.) Press the TF_Annotation button for the task you want to pre-annotate  
-
 ## Adding your own base model to CVAT
 
 You can also add your own base models to CVAT via Onepanel.  Please email us at info@onepanel.io to learn how.
