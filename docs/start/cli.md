@@ -38,7 +38,7 @@ onepanel login
 Alternatively, you can create an [access token](/integrations/access-tokens/#create-access-token) and then login as follows:
 
 ```bash
-onepanel login -t <access-token>
+onepanel login -t <access-token> -u <username>
 ```
 
 ## Check version
