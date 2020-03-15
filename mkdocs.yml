@@ -97,6 +97,7 @@ nav:
     - Account Deletion: accounts/delete.md
   - CVAT:
     - Create Annotation Model: CVAT/create_annotation_model.md
+    - Semi-automatic Annotation: CVAT/semiautomatic_annotation.md
 markdown_extensions:
     - admonition
     - codehilite
