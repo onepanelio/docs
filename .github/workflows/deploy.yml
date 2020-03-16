@@ -15,7 +15,7 @@ jobs:
     - name: setup python
       uses: actions/setup-python@v1
       with:
-        python-version: '3.6.9'
+        python-version: '3.6.x'
         architecture: 'x64'
     - name: install mkdocs
       run: pip install wheel mkdocs mkdocs-material
