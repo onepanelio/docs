@@ -96,6 +96,7 @@ nav:
   - Accounts:
     - Account Deletion: accounts/delete.md
   - CVAT:
+    - Quick Quide on CVAT: CVAT/quick_guide.md
     - Create Annotation Model: CVAT/create_annotation_model.md
     - Semi-automatic Annotation: CVAT/semiautomatic_annotation.md
 markdown_extensions:
