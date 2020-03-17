@@ -1,5 +1,3 @@
-## Quick Guide on Using CVAT
-
 ## Creating New Tasks
 Once you're inside CVAT dashboard, you can create new tasks to start annotating. You will find a Create New Task button on top, clicking on it will open up a new pop up window as follows:
 ![Create New Task](../assets/img/1.PNG?raw=true)
