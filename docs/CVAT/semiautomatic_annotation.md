@@ -12,7 +12,7 @@ The first step is to upload your model on CVAT or use our default model which is
 On your CVAT dashboard, go to a task where you would like to run this pre-annotation model on, find `Run Auto Segmentation` button and click on it. Similar to the above, a list of models will appear. Select the model and hit Start. Your pre-annotation will be started.
 Please note that the Mask RCNN model is a compute-intensive model. It would require at least a single GPU machine.
 
-## Hardware Requirement 
+## Hardware Requirements 
 For training a model( Create New Annotation Model), you can choose any GPU machine from the list. All of our models will work on any of the GPU machine. But if you want to train it faster, then we suggest you select machines with multiple GPUs (i.e 8 V100).
 
 For pre-annotation, you can use a CPU machine (32gb or above) for TF Annotation (bounding box). But It will be considerably slower. So, we suggest you choose a GPU machine for pre-annotation. 
