@@ -11,3 +11,33 @@ The first step is to upload your model on CVAT or use our default model which is
 ## Semi-automatic Annotation of Polygon Masks (Segmentation)
 On your CVAT dashboard, go to a task where you would like to run this pre-annotation model on, find `Run Auto Segmentation` button and click on it. Similar to above, a list of models will appear. Select the model and hit Start. Your pre-annotation will be started.
 Please note that the Mask RCNN model is a compute intensive model. It would require at least a single GPU machine.
+
+## Hardware Requirement 
+For training a model(Create New Annotation Model), you can choose any GPU machine from the list. All of our models will work on any of the GPU machine. But if you want to train it faster, then we suggest you select machines with multiple GPUs (i.e 8 V100).
+
+For pre-annotation, you can use CPU machine (32gb only) for TF Annotation (bounding box). But It will be considerably slow. So, we suggest you choose a GPU machine for pre-annotation. 
+
+For pre-annotation of polygons, you have to use a GPU machine since the Mask RCNN model is compute-intensive.
+
+Please find below a table which enlists machine type with corresponding runtime to run pre-annotation.
+For this test, we used a task with **3550 images (2GB)** to run pre-annotation on.
+
+|    Machine     |    Time     |
+--------------------------------
+|    K80         | 160 minutes | 
+|    V100        |  80 minutes |
+|  V100 x 4      |  21 minutes |
+
+Run time depends upon factors such as **model, number of images, type of machine.**
+
+The above data was generated for ssd-mobilenet-v2 model which is the model we suggest to use in normal circumstances. If you have complex annotation and want to use faster-rcnn based model, then it might take slightly more time. But note that it won’t significantly alter the data presented above.
+
+The other factor is image compression. By default, CVAT compresses images  by 50%. We did some testing to find out if we use original images (without compression) then how much time it will take.
+
+It turns out if you use original images without compression, then your pre-annotation time will be increased by ~5-6% of that of 50% compressed images. So in above table, if you use images without compression and use V100, then it will take 84 minutes instead of 80 minutes. Please note that this compression does not affect annotation in any way.
+
+Note that this data was calculated on 3550 images (1280 x 960)(total size=2GB), so if your data size is different you can easily extrapolate information from above table. For example, if you have 10gb of images then ideally it will take around 400 minutes on V100. 
+
+If the resolution of your images is slightly different, then it won’t affect run time significantly. In fact, if the difference is ~200 pixels then it won’t change at all, generally.
+
+If you still have any questions, feel free to reach out to us.
