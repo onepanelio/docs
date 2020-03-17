@@ -22,11 +22,11 @@ For pre-annotation of polygons, you have to use a GPU machine since the Mask RCN
 Please find below a table which enlists machine type with corresponding runtime to run pre-annotation.
 For this test, we used a task with **3550 images (2GB)** to run pre-annotation on.
 
-|    Machine     |    Time     |
---------------------------------
-|    K80         | 160 minutes | 
-|    V100        |  80 minutes |
-|  V100 x 4      |  21 minutes |
+    Machine     |    Time     
+----------------|---------------
+    K80         | 160 minutes  
+    V100        |  80 minutes 
+  V100 x 4      |  21 minutes 
 
 Run time depends upon factors such as **model, number of images, type of machine.**
 
