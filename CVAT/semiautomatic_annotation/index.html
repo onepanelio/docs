@@ -1321,13 +1321,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#machine-time" class="md-nav__link">
-    |    Machine     |    Time     |
-  </a>
-  
-</li>
-      
       
       
       
@@ -1397,13 +1390,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#machine-time" class="md-nav__link">
-    |    Machine     |    Time     |
-  </a>
-  
-</li>
-      
       
       
       
@@ -1440,10 +1426,14 @@ Please note that the Mask RCNN model is a compute intensive model. It would requ
 <p>For pre-annotation of polygons, you have to use a GPU machine since the Mask RCNN model is compute-intensive.</p>
 <p>Please find below a table which enlists machine type with corresponding runtime to run pre-annotation.
 For this test, we used a task with <strong>3550 images (2GB)</strong> to run pre-annotation on.</p>
-<h2 id="machine-time">|    Machine     |    Time     |<a class="headerlink" href="#machine-time" title="Permanent link">&para;</a></h2>
-<p>|    K80         | 160 minutes | 
-|    V100        |  80 minutes |
-|  V100 x 4      |  21 minutes |</p>
+<div class="codehilite"><pre><span></span><code><span class="err">Machine     |    Time</span>
+</code></pre></div>
+
+
+<p>----------------|---------------
+    K80         | 160 minutes<br />
+    V100        |  80 minutes 
+  V100 x 4      |  21 minutes </p>
 <p>Run time depends upon factors such as <strong>model, number of images, type of machine.</strong></p>
 <p>The above data was generated for ssd-mobilenet-v2 model which is the model we suggest to use in normal circumstances. If you have complex annotation and want to use faster-rcnn based model, then it might take slightly more time. But note that it won’t significantly alter the data presented above.</p>
 <p>The other factor is image compression. By default, CVAT compresses images  by 50%. We did some testing to find out if we use original images (without compression) then how much time it will take.</p>
