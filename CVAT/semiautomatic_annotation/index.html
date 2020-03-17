@@ -1414,45 +1414,45 @@
                 <h2 id="semi-automatic-annotation-on-cvat">Semi-automatic Annotation on CVAT<a class="headerlink" href="#semi-automatic-annotation-on-cvat" title="Permanent link">&para;</a></h2>
 <p>You can use your TensorFlow or OpenVINO model to pre-annotate your data. This can save you a lot of time since you don't have to annotate images from scratch. On Onepanel, you can leverage these features to pre-annotate your bounding boxes or polygon masks. You can also use Object Tracking to track objects in a sequence of frames.</p>
 <h2 id="uploading-your-model-on-cvat">Uploading Your Model on CVAT<a class="headerlink" href="#uploading-your-model-on-cvat" title="Permanent link">&para;</a></h2>
-<p>Before using any type of semi-automatic annotation, you will need to upload your model on CVAT Model Manager. To upload your model, go to your CVAT dashboard and click on Model Manager. A pop window will appear where you can give a name to your model, select the source of your files (local or onepanel datasets), and select files. For TF Annotation and Segmentation, you will need two files- model and classes.csv. For TF Annotation, the model should be Tensorflow Frozen Graph (.pb). For Segmentation, it should be keras model (.h5).</p>
+<p>Before using any type of semi-automatic annotation, you will need to upload your model on CVAT Model Manager. To upload your model, go to your CVAT dashboard and click on Model Manager. A pop window will appear where you can give a name to your model, select the source of your files (local or onepanel datasets), and select files. For TF Annotation and Segmentation, you will need two files- model and classes.csv. For TF Annotation, the model should be Tensorflow Frozen Graph (.pb). For Segmentation, it should be Keras model (.h5).</p>
 <h2 id="semi-automatic-annotation-of-bounding-boxes">Semi-automatic Annotation of Bounding Boxes<a class="headerlink" href="#semi-automatic-annotation-of-bounding-boxes" title="Permanent link">&para;</a></h2>
 <p>The first step is to upload your model on CVAT or use our default model which is inside input/models/cvat-default. Now, click on Run TF Annotation. A pop up will appear where you can select the model you want to use for pre-annotation. Once you select the model, an automatic class mapping will appear, you can modify it if you want. Once done, click on Start. Once it is done, you can go into your task and check out the pre-annotation.</p>
 <h2 id="semi-automatic-annotation-of-polygon-masks-segmentation">Semi-automatic Annotation of Polygon Masks (Segmentation)<a class="headerlink" href="#semi-automatic-annotation-of-polygon-masks-segmentation" title="Permanent link">&para;</a></h2>
-<p>On your CVAT dashboard, go to a task where you would like to run this pre-annotation model on, find <code>Run Auto Segmentation</code> button and click on it. Similar to above, a list of models will appear. Select the model and hit Start. Your pre-annotation will be started.
-Please note that the Mask RCNN model is a compute intensive model. It would require at least a single GPU machine.</p>
+<p>On your CVAT dashboard, go to a task where you would like to run this pre-annotation model on, find <code>Run Auto Segmentation</code> button and click on it. Similar to the above, a list of models will appear. Select the model and hit Start. Your pre-annotation will be started.
+Please note that the Mask RCNN model is a compute-intensive model. It would require at least a single GPU machine.</p>
 <h2 id="hardware-requirement">Hardware Requirement<a class="headerlink" href="#hardware-requirement" title="Permanent link">&para;</a></h2>
-<p>For training a model(Create New Annotation Model), you can choose any GPU machine from the list. All of our models will work on any of the GPU machine. But if you want to train it faster, then we suggest you select machines with multiple GPUs (i.e 8 V100).</p>
-<p>For pre-annotation, you can use CPU machine (32gb only) for TF Annotation (bounding box). But It will be considerably slow. So, we suggest you choose a GPU machine for pre-annotation. </p>
-<p>For pre-annotation of polygons, you have to use a GPU machine since the Mask RCNN model is compute-intensive.</p>
-<p>Please find below a table which enlists machine type with corresponding runtime to run pre-annotation.
+<p>For training a model( Create New Annotation Model), you can choose any GPU machine from the list. All of our models will work on any of the GPU machine. But if you want to train it faster, then we suggest you select machines with multiple GPUs (i.e 8 V100).</p>
+<p>For pre-annotation, you can use CPU machine (32gb only) for TF Annotation (bounding box). But It will be considerably slower. So, we suggest you choose a GPU machine for pre-annotation. </p>
+<p>For the pre-annotation of polygons, you have to use a GPU machine since the Mask RCNN model is compute-intensive.</p>
+<p>Please find below a table which enlists machine type with the corresponding runtime to run pre-annotation.
 For this test, we used a task with <strong>3550 images (2GB)</strong> to run pre-annotation on.</p>
 <table>
 <thead>
 <tr>
-<th>Machine</th>
-<th>Time</th>
+<th>Machine    </th>
+<th>Time    </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>K80</td>
-<td>160 minutes</td>
+<td>K80        </td>
+<td>160 minutes  </td>
 </tr>
 <tr>
-<td>V100</td>
+<td>V100        </td>
 <td>80 minutes</td>
 </tr>
 <tr>
-<td>V100 x 4</td>
+<td>V100 x 4    </td>
 <td>21 minutes</td>
 </tr>
 </tbody>
 </table>
 <p>Run time depends upon factors such as <strong>model, number of images, type of machine.</strong></p>
-<p>The above data was generated for ssd-mobilenet-v2 model which is the model we suggest to use in normal circumstances. If you have complex annotation and want to use faster-rcnn based model, then it might take slightly more time. But note that it won’t significantly alter the data presented above.</p>
-<p>The other factor is image compression. By default, CVAT compresses images  by 50%. We did some testing to find out if we use original images (without compression) then how much time it will take.</p>
-<p>It turns out if you use original images without compression, then your pre-annotation time will be increased by ~5-6% of that of 50% compressed images. So in above table, if you use images without compression and use V100, then it will take 84 minutes instead of 80 minutes. Please note that this compression does not affect annotation in any way.</p>
-<p>Note that this data was calculated on 3550 images (1280 x 960)(total size=2GB), so if your data size is different you can easily extrapolate information from above table. For example, if you have 10gb of images then ideally it will take around 400 minutes on V100. </p>
+<p>The above data was generated for ssd-mobilenet-v2 model which is the model we suggest to use in normal circumstances. If you have complex annotations and want to use faster-rcnn based model, then it might take slightly more time. But note that it won’t significantly alter the data presented above.</p>
+<p>The other factor is image compression. By default, CVAT compresses images by 50%. We did some testing to find out if we use original images (without compression) then how much time it will take.</p>
+<p>It turns out if you use original images without compression, then your pre-annotation time will be increased by ~5-6% of that of 50% compressed images. So in the above table, if you use images without compression and use V100, then it will take 84 minutes instead of 80 minutes. Please note that this compression does not affect annotation in any way.</p>
+<p>Note that this data was calculated on 3550 images (1280 x 960)(total size=2GB), so if your data size is different you can easily extrapolate information from the above table. For example, if you have 10gb of images then ideally it will take around 400 minutes on V100. </p>
 <p>If the resolution of your images is slightly different, then it won’t affect run time significantly. In fact, if the difference is ~200 pixels then it won’t change at all, generally.</p>
 <p>If you still have any questions, feel free to reach out to us.</p>
                 
