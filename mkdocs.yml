@@ -50,6 +50,7 @@ nav:
     - Switch machine types: workspaces/machine-types.md
     - Pause and resume: workspaces/pause-resume.md
     - Delete a workspace: workspaces/delete.md
+    - Workspace Settings: workspaces/workspace-pause.md
   - Jobs:
     - Overview: jobs/index.md
     - Create a job: jobs/create.md
