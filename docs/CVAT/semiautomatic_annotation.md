@@ -9,7 +9,7 @@ Before using any type of semi-automatic annotation, you will need to upload your
 The first step is to upload your model on CVAT or use our default model which is inside input/models/cvat-default. Now, click on Run TF Annotation. A pop up will appear where you can select the model you want to use for pre-annotation. Once you select the model, an automatic class mapping will appear, you can modify it if you want. Once done, click on Start. Once it is done, you can go into your task and check out the pre-annotation.
 
 ## Semi-automatic Annotation of Polygon Masks (Segmentation)
-On your CVAT dashboard, go to a task where you would like to run this pre-annotation model on, find `Run Auto Segmentation` button and click on it. Similar to the above, a list of models will appear. Select the model and hit Start. Your pre-annotation will be started.
+For segmentation, you will have to attach the model to your workspace. Click on Add Dataset, search for maskrcnn-default and click on Add. Once done, please follow above procedure to upload it on your Model Manager. Now, on your CVAT dashboard, go to a task where you would like to run this pre-annotation model on, find `Run Auto Segmentation` button and click on it. Similar to the above, a list of models will appear. Select the model and hit Start. Your pre-annotation will be started.
 Please note that the Mask RCNN model is a compute-intensive model. It would require at least a single GPU machine.
 
 ## Hardware Requirements 
