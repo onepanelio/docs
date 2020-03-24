@@ -36,7 +36,8 @@ If your repository is public, anyone (including us) may view its contents. If yo
 
 If you're a child under the age of 13, you may not have an account on Onepanel. Onepanel does not knowingly collect information from or direct any of our content specifically to children under 13. If we learn or have reason to suspect that you are a user who is under the age of 13, we will unfortunately have to close your account. We don't want to discourage you from learning to code, but those are the rules. Please see our Terms of Service for information about account termination.
 
-How we share the information we collect
+How we share the information we collet 
+
 We do not share User Personal Information with third parties.
 
 We do not disclose User Personal Information outside Onepanel, except in the situations listed in this section or in the section below on Compelled Disclosure.
